@@ -1,0 +1,18 @@
+{
+  "status": "running",
+  "stage": "lr_search",
+  "active": [
+    "lr_hgt_full_lr0.0003",
+    "lr_hgt_full_lr0.0009",
+    "lr_hgt_full_lr0.0027",
+    "lr_hgt_full_lr0.0081",
+    "lr_seq_mean_lr0.0003",
+    "lr_seq_mean_lr0.0009",
+    "lr_seq_mean_lr0.0027",
+    "lr_seq_mean_lr0.0081"
+  ],
+  "pending": 0,
+  "failed": [],
+  "pid": 1027624,
+  "test_evaluated": false
+}

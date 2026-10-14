@@ -1,0 +1,28 @@
+{
+  "train": {
+    "matches": 266,
+    "events": 449291,
+    "targets": 449025,
+    "time_valid": 448759,
+    "position_valid": 441334,
+    "team_valid": 449025,
+    "unknown_player": 33268,
+    "unknown_team": 0,
+    "placeholder_starts": 7691,
+    "paired_first_targets": 58839,
+    "paired_second_targets": 58840
+  },
+  "validation": {
+    "matches": 57,
+    "events": 96948,
+    "targets": 96891,
+    "time_valid": 96834,
+    "position_valid": 95252,
+    "team_valid": 96891,
+    "unknown_player": 7553,
+    "unknown_team": 0,
+    "placeholder_starts": 1639,
+    "paired_first_targets": 13031,
+    "paired_second_targets": 13031
+  }
+}

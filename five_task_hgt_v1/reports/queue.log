@@ -1,0 +1,42 @@
+2026-10-14 11:35:16 queue started
+2026-10-14 11:35:16 start lr_search lr_hgt_full_lr0.0003 gpu0 pid1029499
+2026-10-14 11:35:16 start lr_search lr_hgt_full_lr0.0009 gpu0 pid1029500
+2026-10-14 11:35:16 start lr_search lr_hgt_full_lr0.0027 gpu1 pid1029501
+2026-10-14 11:35:16 start lr_search lr_hgt_full_lr0.0081 gpu1 pid1029502
+2026-10-14 11:35:16 start lr_search lr_seq_mean_lr0.0003 gpu2 pid1029503
+2026-10-14 11:35:16 start lr_search lr_seq_mean_lr0.0009 gpu2 pid1029504
+2026-10-14 11:35:16 start lr_search lr_seq_mean_lr0.0027 gpu3 pid1029505
+2026-10-14 11:35:16 start lr_search lr_seq_mean_lr0.0081 gpu3 pid1029507
+2026-10-14 11:49:36 finish lr_seq_mean_lr0.0081 exit 0
+2026-10-14 11:49:46 finish lr_seq_mean_lr0.0003 exit 0
+2026-10-14 11:49:46 finish lr_seq_mean_lr0.0009 exit 0
+2026-10-14 11:49:46 finish lr_seq_mean_lr0.0027 exit 0
+2026-10-14 11:57:37 finish lr_hgt_full_lr0.0003 exit 0
+2026-10-14 11:57:37 finish lr_hgt_full_lr0.0009 exit 0
+2026-10-14 11:57:37 finish lr_hgt_full_lr0.0027 exit 0
+2026-10-14 11:57:37 finish lr_hgt_full_lr0.0081 exit 0
+2026-10-14 11:57:37 learning rates locked {'hgt': 0.0027, 'seq': 0.0027}
+2026-10-14 11:57:37 start formal formal_hgt_full_s20260715 gpu0 pid1038100
+2026-10-14 11:57:37 start formal formal_hgt_no_seq_s20260715 gpu0 pid1038101
+2026-10-14 11:57:37 start formal formal_hgt_untyped_seq_s20260715 gpu1 pid1038102
+2026-10-14 11:57:37 start formal formal_hgt_no_player_s20260715 gpu1 pid1038103
+2026-10-14 11:57:37 start formal formal_hgt_no_team_s20260715 gpu2 pid1038104
+2026-10-14 11:57:37 start formal formal_hgt_no_member_s20260715 gpu2 pid1038105
+2026-10-14 11:57:37 start formal formal_hgt_no_type_s20260715 gpu3 pid1038106
+2026-10-14 11:57:37 start formal formal_hgt_no_zone_s20260715 gpu3 pid1038107
+2026-10-14 13:28:47 finish formal_hgt_no_player_s20260715 exit 0
+2026-10-14 13:28:47 start formal formal_hgt_no_possession_s20260715 gpu1 pid1070915
+2026-10-14 13:35:07 finish formal_hgt_no_zone_s20260715 exit 0
+2026-10-14 13:35:07 start formal formal_hgt_shuffled_player_s20260715 gpu3 pid1073494
+2026-10-14 13:35:57 finish formal_hgt_no_type_s20260715 exit 0
+2026-10-14 13:35:57 start formal formal_hgt_anchor_readout_s20260715 gpu3 pid1073796
+2026-10-14 13:37:37 finish formal_hgt_no_seq_s20260715 exit 0
+2026-10-14 13:37:37 start formal formal_hgt_events_only_s20260715 gpu0 pid1074349
+2026-10-14 13:39:17 finish formal_hgt_untyped_seq_s20260715 exit 0
+2026-10-14 13:39:17 start formal formal_seq_mean_s20260715 gpu1 pid1074999
+2026-10-14 13:43:07 finish formal_hgt_no_team_s20260715 exit 0
+2026-10-14 13:43:07 start formal formal_seq_anchor_s20260715 gpu2 pid1076434
+2026-10-14 13:43:47 finish formal_hgt_no_member_s20260715 exit 0
+2026-10-14 13:43:47 start formal formal_hgt_full_s20260716 gpu2 pid1076733
+2026-10-14 13:45:17 finish formal_hgt_full_s20260715 exit 0
+2026-10-14 13:45:17 start formal formal_hgt_no_seq_s20260716 gpu0 pid1077301

@@ -1,0 +1,8 @@
+{
+  "population": "same-period adjacent valid nonplaceholder starts with known teams",
+  "n": 93580,
+  "mirror_rule_accuracy": 0.5347830733062621,
+  "majority_accuracy": 0.569309681555888,
+  "passes": true,
+  "anchor_copy_error_metres": 14.59494253073934
+}

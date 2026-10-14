@@ -1,0 +1,64 @@
+{
+  "players": 577,
+  "teams": 21,
+  "subtype_codes": 114,
+  "pair_kinds": [
+    [
+      10,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      10,
+      12
+    ],
+    [
+      10,
+      13
+    ],
+    [
+      11,
+      11
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      11,
+      13
+    ],
+    [
+      12,
+      12
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      13
+    ]
+  ],
+  "unknown_pair_code": 113,
+  "roles": {
+    "Goalkeeper": 1,
+    "Defender": 2,
+    "Midfielder": 3,
+    "Forward": 4
+  },
+  "feet": {
+    "right": 1,
+    "left": 2,
+    "both": 3
+  },
+  "team_types": {
+    "club": 1,
+    "national": 2
+  },
+  "source": "train matches only"
+}

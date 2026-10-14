@@ -1,0 +1,3 @@
+lr_seq_mean_lr0.0003 epoch 1 train 0.543912 best inf seconds 91.0
+lr_seq_mean_lr0.0003 epoch 2 train 0.512981 best inf seconds 175.4
+lr_seq_mean_lr0.0003 epoch 3 train 0.500212 best inf seconds 200.0

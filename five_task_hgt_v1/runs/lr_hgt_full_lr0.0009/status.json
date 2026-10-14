@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "stop_reason": "calibration_budget",
+  "epochs": 24,
+  "best_epoch": 24,
+  "best_monitor": 0.35075216339775656,
+  "optimizer_steps": 3192,
+  "cumulative_targets": 817152
+}

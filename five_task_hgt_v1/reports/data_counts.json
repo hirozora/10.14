@@ -1,0 +1,34 @@
+{
+  "train": {
+    "matches": 266,
+    "records": 449291,
+    "pairs": 58840,
+    "units": 390451,
+    "targets": 390185,
+    "duel_targets": 58839,
+    "duel_anchors": 58799,
+    "player_masked": 33151,
+    "duel_targets_player_masked": 11451,
+    "position_valid": 382494,
+    "time_valid": 389919,
+    "unseen_roster_players": 0,
+    "roster_slots_mean": 35.96992481203007,
+    "merged_duels_without_preceding_single": 1
+  },
+  "validation": {
+    "matches": 57,
+    "records": 96948,
+    "pairs": 13031,
+    "units": 83917,
+    "targets": 83860,
+    "duel_targets": 13031,
+    "duel_anchors": 13021,
+    "player_masked": 7543,
+    "duel_targets_player_masked": 2883,
+    "position_valid": 82221,
+    "time_valid": 83803,
+    "unseen_roster_players": 28,
+    "roster_slots_mean": 35.94736842105263,
+    "merged_duels_without_preceding_single": 0
+  }
+}

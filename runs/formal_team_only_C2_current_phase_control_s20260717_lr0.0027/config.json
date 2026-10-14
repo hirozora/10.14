@@ -1,0 +1,1117 @@
+{
+  "protocol": {
+    "version": "1.1",
+    "root": "/home/li/football/graph_prediction_research",
+    "protocol": "PROTOCOL.md",
+    "scope": "rebuild_train_validation_then_start_calibration_and_training",
+    "paths": {
+      "raw_events": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/events/events_England.json",
+      "raw_matches": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/matches/matches_England.json",
+      "manifests": {
+        "train": "/home/li/football/soccer_cohig_publish/configs/manifests/England_train.json",
+        "validation": "/home/li/football/soccer_cohig_publish/configs/manifests/England_validation.json",
+        "test": "/home/li/football/soccer_cohig_publish/configs/manifests/England_test.json"
+      },
+      "data": "/home/li/football/graph_prediction_research/data",
+      "runs": "/home/li/football/graph_prediction_research/runs",
+      "reports": "/home/li/football/graph_prediction_research/reports"
+    },
+    "dataset": {
+      "name": "Wyscout England",
+      "expected": {
+        "train": {
+          "matches": 266,
+          "targets": 449025
+        },
+        "validation": {
+          "matches": 57,
+          "targets": 96891
+        },
+        "test": {
+          "matches": 57
+        }
+      },
+      "build_splits": [
+        "train",
+        "validation"
+      ],
+      "sort": [
+        "match_id",
+        "period",
+        "eventSec",
+        "original_order"
+      ],
+      "period_order": [
+        "1H",
+        "2H",
+        "E1",
+        "E2",
+        "P"
+      ],
+      "target": "next_raw_record",
+      "max_history": 80,
+      "test_locked": true,
+      "test_description": "已有测试集上的复核"
+    },
+    "information": {
+      "core": [
+        "raw10",
+        "raw_subevent",
+        "period",
+        "within_window_order"
+      ],
+      "groups": {
+        "C": [
+          "period_seconds",
+          "valid_relative_seconds"
+        ],
+        "X": [
+          "anchor_team_frame_start_xy",
+          "position_valid"
+        ],
+        "P": [
+          "window_first_occurrence_player_identity"
+        ],
+        "T": [
+          "window_first_occurrence_team_identity"
+        ]
+      },
+      "excluded": [
+        "end_position",
+        "tags",
+        "tag_count",
+        "success",
+        "score",
+        "cards",
+        "old_possession",
+        "lineups",
+        "player_attributes",
+        "post_match_statistics"
+      ],
+      "remove_group_removes_all_derivatives": true,
+      "continuous_time_ablation_preserves": [
+        "period",
+        "event_order"
+      ],
+      "placeholder_subevents": [
+        34,
+        40,
+        51,
+        90,
+        91
+      ],
+      "preserve_valid_corner_kicks": true,
+      "unknown_identity": 0,
+      "unknown_identity_has_no_relation": true,
+      "action_details": "v1 does not study action-detail tags; no F+A; all tags including 201 excluded"
+    },
+    "coordinates": {
+      "frame": "anchor_team_attacking_direction",
+      "opponent_transform": "1 - xy",
+      "same_team_transform": "xy",
+      "cross_period": "team-relative attacking frame; not stadium-fixed compass coordinates",
+      "input_transform_uses": "observed input actor team and anchor team only",
+      "target_transform_uses": "target team on target side only",
+      "unknown_team": "mask coordinates when anchor or respective actor team unknown",
+      "normalization": 100,
+      "pitch_metres": [
+        105,
+        68
+      ],
+      "paired_duel_mirror_tolerance": 0.011,
+      "corrected_position_mirror_acceptance": false,
+      "mirror_probe_required": "validation transformed-coordinate mirror-rule accuracy <= majority accuracy on identical valid adjacent-record population"
+    },
+    "possession": {
+      "raw_factor": false,
+      "initial_owner": "unknown_each_window",
+      "confirm_event_ids": [
+        3,
+        8,
+        10
+      ],
+      "confirm_subevent_ids": [
+        70,
+        71
+      ],
+      "contest_event_ids": [
+        1,
+        4,
+        9
+      ],
+      "close_event_ids": [
+        2,
+        5,
+        6
+      ],
+      "period_boundary_closes": true,
+      "backfill": false,
+      "features": "membership_only",
+      "recompute_after_selection": true
+    },
+    "tasks": {
+      "etp": {
+        "event_classes": 10,
+        "event_weight": 0.2,
+        "event_divisor": "ln(10)",
+        "loss_divisor": 3,
+        "time_clip_seconds": [
+          0,
+          60
+        ],
+        "time_scale": 60,
+        "time_smooth_l1_beta": 0.016666666666666666,
+        "position_smooth_l1_beta": 1,
+        "position_reduce": "mean_coordinates_then_valid_targets",
+        "time_mask": "same_period",
+        "position_mask": "valid_nonplaceholder_known_coordinate_frame",
+        "monitor": "etp_loss"
+      },
+      "team_only": {
+        "classes": 2,
+        "target": "next_actor_same_as_anchor",
+        "loss": "unweighted_cross_entropy",
+        "mask": "both_teams_known",
+        "monitor": "team_nll"
+      }
+    },
+    "backbone": {
+      "name": "pre_ln_attention",
+      "layers": 2,
+      "hidden": 64,
+      "heads": 4,
+      "ffn": 128,
+      "dropout": 0.1,
+      "readout": "anchor_only",
+      "input_slots_shared": true,
+      "paired_initialization": true,
+      "time_bias": {
+        "enabled_in_all_conditions": true,
+        "mlp_hidden": 16,
+        "inputs": [
+          "delta_n",
+          "delta_t",
+          "delta_t_valid",
+          "same_player",
+          "same_team",
+          "same_phase"
+        ],
+        "relation_off": "zero_relation_slots_in_same_mlp",
+        "continuous_time_off": "zero_delta_t_and_valid_slots",
+        "shared_across_heads": "one_mlp_with_4_outputs"
+      },
+      "sparse": {
+        "self": true,
+        "recent": 8,
+        "same_player": 4,
+        "same_team_different_player": 4,
+        "same_phase": 4,
+        "entity_same_period_only": true,
+        "deduplicate": true
+      },
+      "output_heads": "independent_linear"
+    },
+    "conditions": {
+      "B_core": {
+        "groups": [],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_T": {
+        "groups": [
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_P": {
+        "groups": [
+          "P"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_PT": {
+        "groups": [
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_X": {
+        "groups": [
+          "X"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_XT": {
+        "groups": [
+          "X",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_XP": {
+        "groups": [
+          "X",
+          "P"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_XPT": {
+        "groups": [
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_C": {
+        "groups": [
+          "C"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CT": {
+        "groups": [
+          "C",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CP": {
+        "groups": [
+          "C",
+          "P"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CPT": {
+        "groups": [
+          "C",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CX": {
+        "groups": [
+          "C",
+          "X"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CXT": {
+        "groups": [
+          "C",
+          "X",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CXP": {
+        "groups": [
+          "C",
+          "X",
+          "P"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "B_CXPT": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "D00": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": true,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C1_1": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 1,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C1_4": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 4,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C1_8": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 8,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C1_16": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C1_32": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 32,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": false
+      },
+      "C2_player_relation": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "player",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "relation"
+      },
+      "C2_player_control": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "player",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "control"
+      },
+      "C2_current_phase_relation": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "current_phase",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "relation"
+      },
+      "C2_current_phase_control": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "current_phase",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "control"
+      },
+      "C2_other_phase_team_relation": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "other_phase_team",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "relation"
+      },
+      "C2_other_phase_team_control": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": false,
+        "window": 16,
+        "selection": "other_phase_team",
+        "connection": "dense",
+        "relation_bias": false,
+        "arm": "control"
+      },
+      "D01": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": true,
+        "window": 80,
+        "selection": "recent",
+        "connection": "dense",
+        "relation_bias": true
+      },
+      "D10": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": true,
+        "window": 80,
+        "selection": "recent",
+        "connection": "sparse",
+        "relation_bias": false
+      },
+      "D11": {
+        "groups": [
+          "C",
+          "X",
+          "P",
+          "T"
+        ],
+        "possession": true,
+        "window": 80,
+        "selection": "recent",
+        "connection": "sparse",
+        "relation_bias": true
+      }
+    },
+    "aliases": {
+      "F": "B_CXPT",
+      "F_minus_P": "B_CXT",
+      "F_minus_T": "B_CXP",
+      "F_plus_Z": "D00",
+      "C1_80": "B_CXPT"
+    },
+    "selection": {
+      "rules": [
+        "player",
+        "current_phase",
+        "other_phase_team"
+      ],
+      "candidate_window": 80,
+      "visible": 16,
+      "max_pairs": 8,
+      "older_than_recent": 16,
+      "same_period": true,
+      "unknown_relations_excluded": true,
+      "controls": {
+        "player": "same_team_different_player_match_current_phase_status",
+        "current_phase": "same_team_different_player_other_known_phase",
+        "other_phase_team": "different_team_other_known_phase"
+      },
+      "delta_n_edges": [
+        16,
+        32,
+        48,
+        64,
+        80
+      ],
+      "delta_t_edges": [
+        0,
+        5,
+        15,
+        30,
+        60,
+        null
+      ],
+      "last_null_is_positive_infinity": true,
+      "relationship_order": "nearest_first",
+      "control_sampling": "without_replacement_same_2d_bucket",
+      "relax_buckets": false,
+      "recent_count": "16-q",
+      "q_zero": "identical_recent_16",
+      "model_features": "recompute_on_selected_records_only",
+      "seed_map": {
+        "20260715": 20261014,
+        "20260716": 20261015,
+        "20260717": 20261016
+      },
+      "confirm_all_rules": true,
+      "select_R_star": false,
+      "subsets": [
+        "all_targets",
+        "q_positive_paired"
+      ]
+    },
+    "training": {
+      "seeds": [
+        20260715,
+        20260716,
+        20260717
+      ],
+      "exploration_seed": 20260715,
+      "precision": "float32",
+      "tf32": false,
+      "deterministic": true,
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "gradient_clip": 5,
+      "batch_size": 256,
+      "gradient_accumulation": 1,
+      "sampling": "Rotate",
+      "targets_per_match": 128,
+      "targets_per_epoch": 34048,
+      "updates_per_epoch": 133,
+      "validation_every": 4,
+      "max_epochs": 120,
+      "warmup_no_decay_epochs": 24,
+      "min_stop_epoch": 48,
+      "relative_improvement": 0.001,
+      "patience_validations": 3,
+      "lr_decay_factor": 0.3,
+      "max_lr_decays": 2,
+      "budget_exhausted_is_converged": false,
+      "checkpoint": "minimum_actual_validation_monitor_ties_earliest",
+      "reuse_seed_one_same_config": true,
+      "reuse_old_weights": false,
+      "refit": false,
+      "extra_retrieval": false,
+      "team_postprocessing": false,
+      "five_task_gradients": false
+    },
+    "lr_search": {
+      "candidates": [
+        0.0003,
+        0.0009,
+        0.0027
+      ],
+      "seed": 20260715,
+      "epochs": 24,
+      "common_references": [
+        "D00",
+        "D11"
+      ],
+      "external_references": [
+        "recent_16",
+        "full_80"
+      ],
+      "per_task": true,
+      "score": "mean_of_reference_best_validation_monitors",
+      "tie": "smaller_lr",
+      "formal_restart": true
+    },
+    "stages": {
+      "A": {
+        "status": "pending",
+        "outputs": [
+          "counts",
+          "masks",
+          "unknown_identities",
+          "placeholder_counts",
+          "phase_statistics",
+          "C2_coverage_all_rules_all_selection_seeds",
+          "coordinate_mirror_probe",
+          "acceptance"
+        ]
+      },
+      "calibration": {
+        "status": "pending",
+        "after": "A",
+        "order": [
+          "learning_rate_grid",
+          "D00_three_full_seed_runs",
+          "lock_primary_effect_thresholds"
+        ]
+      },
+      "B": {
+        "status": "pending",
+        "conditions": [
+          "B_core",
+          "B_T",
+          "B_P",
+          "B_PT",
+          "B_X",
+          "B_XT",
+          "B_XP",
+          "B_XPT",
+          "B_C",
+          "B_CT",
+          "B_CP",
+          "B_CPT",
+          "B_CX",
+          "B_CXT",
+          "B_CXP",
+          "B_CXPT",
+          "D00"
+        ],
+        "confirm": [
+          "B_CXPT",
+          "B_CXT",
+          "B_CXP",
+          "D00"
+        ],
+        "shapley_utilities": [
+          "negative_etp_loss",
+          "negative_team_nll",
+          "negative_event_ce",
+          "negative_time_loss",
+          "negative_position_loss"
+        ],
+        "single_seed_is_exploratory": true
+      },
+      "C1": {
+        "status": "pending",
+        "conditions": [
+          "C1_1",
+          "C1_4",
+          "C1_8",
+          "C1_16",
+          "C1_32",
+          "B_CXPT"
+        ],
+        "confirm": [
+          "C1_1",
+          "C1_16",
+          "B_CXPT"
+        ]
+      },
+      "C2": {
+        "status": "pending",
+        "conditions": [
+          "C2_player_relation",
+          "C2_player_control",
+          "C2_current_phase_relation",
+          "C2_current_phase_control",
+          "C2_other_phase_team_relation",
+          "C2_other_phase_team_control"
+        ],
+        "confirm": [
+          "C2_player_relation",
+          "C2_player_control",
+          "C2_current_phase_relation",
+          "C2_current_phase_control",
+          "C2_other_phase_team_relation",
+          "C2_other_phase_team_control",
+          "C1_16",
+          "B_CXPT"
+        ]
+      },
+      "D": {
+        "status": "pending",
+        "conditions": [
+          "D00",
+          "D01",
+          "D10",
+          "D11"
+        ],
+        "confirm": [
+          "D00",
+          "D01",
+          "D10",
+          "D11"
+        ],
+        "export_reachability_hops": [
+          1,
+          2
+        ]
+      },
+      "E": {
+        "status": "gated",
+        "requires": "C_or_D_primary_comparison_passes_adoption",
+        "backbones": {
+          "hgt": {
+            "layers": 2,
+            "hidden": 64,
+            "heads": 4,
+            "anchor_directly_accesses_all_selected": true
+          },
+          "gru": {
+            "layers": 2,
+            "hidden": 64
+          }
+        },
+        "rules": "each_rule_passing_gate_no_winner_selection",
+        "roles": [
+          "recent_16",
+          "relation_16",
+          "matched_control_16",
+          "full_80"
+        ],
+        "seed_count": 3
+      }
+    },
+    "evaluation": {
+      "checkpoint_view": "per_record",
+      "primary_view": "duel_corrected",
+      "views": [
+        "per_record",
+        "duel_corrected",
+        "nonpaired"
+      ],
+      "duel_corrected": {
+        "drop_second": true,
+        "first_position": "single_physical_point",
+        "exclude_first_from_team": true
+      },
+      "etp_metrics": [
+        "etp_loss",
+        "event_accuracy",
+        "event_macro_f1",
+        "event_ce",
+        "event_per_class_f1",
+        "time_loss",
+        "position_loss",
+        "time_mae_seconds",
+        "position_error_metres"
+      ],
+      "team_metrics": [
+        "team_nll",
+        "team_accuracy",
+        "team_macro_f1"
+      ],
+      "costs": [
+        "training_seconds",
+        "inference_per_second",
+        "peak_gpu_bytes",
+        "total_parameters",
+        "gradient_parameters"
+      ],
+      "scenario_inputs": [
+        "anchor_action",
+        "visible_history",
+        "online_state"
+      ],
+      "outcome_groups": "posthoc_only"
+    },
+    "statistics": {
+      "comparisons": [
+        {
+          "id": "player_information",
+          "candidate": "B_CXPT",
+          "reference": "B_CXT"
+        },
+        {
+          "id": "team_information",
+          "candidate": "B_CXPT",
+          "reference": "B_CXP"
+        },
+        {
+          "id": "possession_representation",
+          "candidate": "D00",
+          "reference": "B_CXPT"
+        },
+        {
+          "id": "player_vs_recent",
+          "candidate": "C2_player_relation",
+          "reference": "C1_16"
+        },
+        {
+          "id": "player_vs_control",
+          "candidate": "C2_player_relation",
+          "reference": "C2_player_control"
+        },
+        {
+          "id": "current_phase_vs_recent",
+          "candidate": "C2_current_phase_relation",
+          "reference": "C1_16"
+        },
+        {
+          "id": "current_phase_vs_control",
+          "candidate": "C2_current_phase_relation",
+          "reference": "C2_current_phase_control"
+        },
+        {
+          "id": "other_phase_team_vs_recent",
+          "candidate": "C2_other_phase_team_relation",
+          "reference": "C1_16"
+        },
+        {
+          "id": "other_phase_team_vs_control",
+          "candidate": "C2_other_phase_team_relation",
+          "reference": "C2_other_phase_team_control"
+        },
+        {
+          "id": "dense_relation_bias",
+          "candidate": "D01",
+          "reference": "D00"
+        },
+        {
+          "id": "sparse_selection",
+          "candidate": "D10",
+          "reference": "D00"
+        },
+        {
+          "id": "sparse_relation_bias",
+          "candidate": "D11",
+          "reference": "D10"
+        }
+      ],
+      "tasks": [
+        "etp",
+        "team_only"
+      ],
+      "family_size": 24,
+      "primary_metrics": {
+        "etp": "etp_loss",
+        "team_only": "team_nll"
+      },
+      "difference": "candidate_minus_reference",
+      "lower_primary_is_better": true,
+      "seed_weight": "equal",
+      "sd_ddof": 1,
+      "bootstrap": {
+        "unit": "match",
+        "replicates": 10000,
+        "seed": 20261014,
+        "paired": true,
+        "shared_weights": true,
+        "aggregate_before_metric": true,
+        "confidence": 0.95,
+        "correction": "Bonferroni",
+        "conditional_on_trained_selected_models": true
+      },
+      "primary_effect_threshold": {
+        "status": "pending_calibration",
+        "formula": "3 * sample_sd(D00_three_seed_primary_metrics)",
+        "sd_multiplier": 3,
+        "view": "duel_corrected_validation",
+        "freeze_before_other_formal_conditions": true,
+        "file": "/home/li/football/graph_prediction_research/reports/thresholds.json"
+      },
+      "secondary_effects": {
+        "accuracy_absolute": 0.002,
+        "event_macro_f1_absolute": 0.005,
+        "time_mae_seconds": 0.01,
+        "position_error_metres": 0.1
+      },
+      "adoption": {
+        "min_improving_seeds": 2,
+        "corrected_interval_excludes_zero": true,
+        "etp_max_regression": {
+          "event_macro_f1": 0.005,
+          "time_mae_seconds": 0.02,
+          "position_error_metres": 0.25
+        }
+      },
+      "failure_labels": [
+        "证据不足",
+        "效应小于关注阈值",
+        "存在退步",
+        "预算耗尽"
+      ],
+      "q_positive_analysis": "prespecified_secondary_paired_analysis"
+    },
+    "acceptance": [
+      "future_invariance",
+      "forbidden_fields_invariance",
+      "ablation_firewall",
+      "identity_rename_invariance",
+      "target_alignment",
+      "selection_unique_anchor_padding",
+      "unselected_event_firewall",
+      "paired_selection_matching",
+      "attention_masks_and_reachability",
+      "possession_boundaries",
+      "serialization_and_finite_full_batch",
+      "bootstrap_alignment_and_match_statistics",
+      "paired_duels_coincide_after_transform",
+      "mirror_probe_not_above_majority"
+    ],
+    "artifacts": [
+      "config",
+      "seed",
+      "sample_order",
+      "input_field_list",
+      "epoch_train_validation_metrics",
+      "lr",
+      "exposure",
+      "timing",
+      "best_checkpoint",
+      "last_checkpoint",
+      "stop_reason",
+      "best_sample_predictions",
+      "match_statistics",
+      "selection_coverage_q_distance_errors",
+      "parameter_counts_throughput_memory"
+    ],
+    "execution": {
+      "python": "/home/li/football/paper_1/Phase_1/.venv/bin/python",
+      "gpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "test_evaluation_enabled": false,
+      "fail_on_existing_run": true,
+      "fail_on_missing_input": true
+    }
+  },
+  "condition_id": "C2_current_phase_control",
+  "condition": {
+    "groups": [
+      "C",
+      "X",
+      "P",
+      "T"
+    ],
+    "possession": false,
+    "window": 16,
+    "selection": "current_phase",
+    "connection": "dense",
+    "relation_bias": false,
+    "arm": "control"
+  },
+  "task": "team_only",
+  "seed": 20260717,
+  "lr": 0.0027,
+  "mode": "formal",
+  "device": "cuda:2",
+  "epochs": 120,
+  "input_fields": {
+    "core": [
+      "raw10",
+      "raw_subevent",
+      "period",
+      "within_window_order"
+    ],
+    "groups": {
+      "C": [
+        "period_seconds",
+        "valid_relative_seconds"
+      ],
+      "X": [
+        "anchor_team_frame_start_xy",
+        "position_valid"
+      ],
+      "P": [
+        "window_first_occurrence_player_identity"
+      ],
+      "T": [
+        "window_first_occurrence_team_identity"
+      ]
+    },
+    "possession": false,
+    "coordinate_frame": {
+      "frame": "anchor_team_attacking_direction",
+      "opponent_transform": "1 - xy",
+      "same_team_transform": "xy",
+      "cross_period": "team-relative attacking frame; not stadium-fixed compass coordinates",
+      "input_transform_uses": "observed input actor team and anchor team only",
+      "target_transform_uses": "target team on target side only",
+      "unknown_team": "mask coordinates when anchor or respective actor team unknown",
+      "normalization": 100,
+      "pitch_metres": [
+        105,
+        68
+      ],
+      "paired_duel_mirror_tolerance": 0.011,
+      "corrected_position_mirror_acceptance": false,
+      "mirror_probe_required": "validation transformed-coordinate mirror-rule accuracy <= majority accuracy on identical valid adjacent-record population"
+    }
+  }
+}

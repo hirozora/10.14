@@ -1,0 +1,9 @@
+2026-10-14 11:30:50 queue started
+2026-10-14 11:30:50 start lr_search lr_hgt_full_lr0.0003 gpu0 pid1027625
+2026-10-14 11:30:50 start lr_search lr_hgt_full_lr0.0009 gpu0 pid1027626
+2026-10-14 11:30:50 start lr_search lr_hgt_full_lr0.0027 gpu1 pid1027627
+2026-10-14 11:30:50 start lr_search lr_hgt_full_lr0.0081 gpu1 pid1027628
+2026-10-14 11:30:50 start lr_search lr_seq_mean_lr0.0003 gpu2 pid1027629
+2026-10-14 11:30:50 start lr_search lr_seq_mean_lr0.0009 gpu2 pid1027630
+2026-10-14 11:30:50 start lr_search lr_seq_mean_lr0.0027 gpu3 pid1027631
+2026-10-14 11:30:50 start lr_search lr_seq_mean_lr0.0081 gpu3 pid1027632

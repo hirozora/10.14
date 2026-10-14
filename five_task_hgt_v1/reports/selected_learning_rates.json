@@ -1,0 +1,74 @@
+{
+  "status": "locked",
+  "selected": {
+    "hgt": 0.0027,
+    "seq": 0.0027
+  },
+  "at_grid_edge": {
+    "hgt": false,
+    "seq": false
+  },
+  "scores": {
+    "hgt": [
+      {
+        "lr": 0.0003,
+        "best": [
+          0.37147013304888304,
+          24
+        ]
+      },
+      {
+        "lr": 0.0009,
+        "best": [
+          0.35075216339775656,
+          24
+        ]
+      },
+      {
+        "lr": 0.0027,
+        "best": [
+          0.34783082750452704,
+          24
+        ]
+      },
+      {
+        "lr": 0.0081,
+        "best": [
+          0.38180544835386887,
+          20
+        ]
+      }
+    ],
+    "seq": [
+      {
+        "lr": 0.0003,
+        "best": [
+          0.4420075936672307,
+          24
+        ]
+      },
+      {
+        "lr": 0.0009,
+        "best": [
+          0.4182526696901358,
+          24
+        ]
+      },
+      {
+        "lr": 0.0027,
+        "best": [
+          0.4099312909936257,
+          24
+        ]
+      },
+      {
+        "lr": 0.0081,
+        "best": [
+          0.4181405107134088,
+          24
+        ]
+      }
+    ]
+  },
+  "rule": "lowest validation five_task_loss within 24 epochs; ties take the smaller rate; a selection at a grid end is reported"
+}

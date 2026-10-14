@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "stop_reason": "plateau_after_two_decays",
+  "epochs": 104,
+  "best_epoch": 104,
+  "best_monitor": 0.04201553374584719,
+  "optimizer_steps": 13832,
+  "cumulative_targets": 3540992
+}

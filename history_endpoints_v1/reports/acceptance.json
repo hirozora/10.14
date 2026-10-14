@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "tests_run": 8,
+  "errors": 0,
+  "failures": 0,
+  "full_batch_device": "cpu",
+  "test_evaluated": false
+}

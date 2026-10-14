@@ -1,0 +1,7 @@
+{
+  "total_parameters": 92021,
+  "parameters_in_gradient_tensors": 86837,
+  "observed_nonzero_gradient_elements": 73749,
+  "peak_gpu_bytes": 126093312,
+  "training_wall_seconds": 720.6584357698448
+}

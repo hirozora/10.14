@@ -1,0 +1,21 @@
+{
+  "epoch": 112,
+  "metrics": {
+    "per_record": {
+      "team_nll": 0.4179963439416743,
+      "team_accuracy": 0.7908474471313125,
+      "team_macro_f1": 0.7849282273432157
+    },
+    "duel_corrected": {
+      "team_nll": 0.4150677998268174,
+      "team_accuracy": 0.8018467012099564,
+      "team_macro_f1": 0.765386026612578
+    },
+    "nonpaired": {
+      "team_nll": 0.4150677998268174,
+      "team_accuracy": 0.8018467012099564,
+      "team_macro_f1": 0.765386026612578
+    }
+  },
+  "inference_samples_per_second": 7915.743414302912
+}

@@ -1,0 +1,20 @@
+test_01_whitelist_ignores_forbidden_fields (test_protocol.ProtocolTests.test_01_whitelist_ignores_forbidden_fields) ... ok
+test_02_future_invariance (test_protocol.ProtocolTests.test_02_future_invariance) ... ok
+test_03_rename_invariance (test_protocol.ProtocolTests.test_03_rename_invariance) ... ok
+test_04_group_firewall (test_protocol.ProtocolTests.test_04_group_firewall) ... ok
+test_05_masks_reachability (test_protocol.ProtocolTests.test_05_masks_reachability) ... ok
+test_06_possession_boundaries (test_protocol.ProtocolTests.test_06_possession_boundaries) ... ok
+test_07_selection_matching (test_protocol.ProtocolTests.test_07_selection_matching) ... ok
+test_08_unselected_firewall (test_protocol.ProtocolTests.test_08_unselected_firewall) ... ok
+test_09_target_alignment (test_protocol.ProtocolTests.test_09_target_alignment) ... ok
+test_10_serialization_finite_full_batch (test_protocol.ProtocolTests.test_10_serialization_finite_full_batch) ... ok
+test_11_duel_coordinates (test_protocol.ProtocolTests.test_11_duel_coordinates) ... ok
+test_12_coordinate_mirror_probe (test_protocol.ProtocolTests.test_12_coordinate_mirror_probe) ... ok
+test_13_bootstrap_and_statistics (test_protocol.ProtocolTests.test_13_bootstrap_and_statistics) ... ok
+test_14_stopping_and_paired_initialization (test_protocol.ProtocolTests.test_14_stopping_and_paired_initialization) ... ok
+test_15_masked_padding_and_position (test_protocol.ProtocolTests.test_15_masked_padding_and_position) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 3.745s
+
+OK

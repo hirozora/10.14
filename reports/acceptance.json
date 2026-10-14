@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "required_checks": [
+    "future_invariance",
+    "forbidden_fields_invariance",
+    "ablation_firewall",
+    "identity_rename_invariance",
+    "target_alignment",
+    "selection_unique_anchor_padding",
+    "unselected_event_firewall",
+    "paired_selection_matching",
+    "attention_masks_and_reachability",
+    "possession_boundaries",
+    "serialization_and_finite_full_batch",
+    "bootstrap_alignment_and_match_statistics",
+    "paired_duels_coincide_after_transform",
+    "mirror_probe_not_above_majority"
+  ],
+  "train_targets": 449025,
+  "validation_targets": 96891,
+  "test_evaluated": false
+}

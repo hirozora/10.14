@@ -1,0 +1,26 @@
+{
+  "epoch": 120,
+  "metrics": {
+    "per_record": {
+      "team_nll": 0.41856263421642037,
+      "team_accuracy": 0.7898463221558246,
+      "team_macro_f1": 0.7842631300960614
+    },
+    "duel_corrected": {
+      "team_nll": 0.4159674623266425,
+      "team_accuracy": 0.8004066131104491,
+      "team_macro_f1": 0.7650328177694133
+    },
+    "nonpaired": {
+      "team_nll": 0.4159674623266425,
+      "team_accuracy": 0.8004066131104491,
+      "team_macro_f1": 0.7650328177694133
+    },
+    "q_positive": {
+      "team_nll": 0.2650346062410972,
+      "team_accuracy": 0.9022046353872244,
+      "team_macro_f1": 0.8371655979955699
+    }
+  },
+  "inference_samples_per_second": 20163.418304364095
+}

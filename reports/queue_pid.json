@@ -1,0 +1,5 @@
+{
+  "pid": 643096,
+  "command": "src/run_experiments.py --config configs/experiments.json",
+  "log": "/home/li/football/graph_prediction_research/reports/queue.log"
+}

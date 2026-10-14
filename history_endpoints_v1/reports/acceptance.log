@@ -1,0 +1,13 @@
+test_anchor_and_future_never_enter (__main__.EndpointTests.test_anchor_and_future_never_enter) ... ok
+test_assist_keypass_keep_pass (__main__.EndpointTests.test_assist_keypass_keep_pass) ... ok
+test_direction_padding_and_unknown (__main__.EndpointTests.test_direction_padding_and_unknown) ... ok
+test_initialization_roundtrip_full_batch (__main__.EndpointTests.test_initialization_roundtrip_full_batch) ... ok
+test_missing_and_placeholder (__main__.EndpointTests.test_missing_and_placeholder) ... ok
+test_model_defense_anchor_and_padding (__main__.EndpointTests.test_model_defense_anchor_and_padding) ... ok
+test_real_history_available_and_unselected_excluded (__main__.EndpointTests.test_real_history_available_and_unselected_excluded) ... ok
+test_same_targets_selection_and_order (__main__.EndpointTests.test_same_targets_selection_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 12.920s
+
+OK

@@ -1,0 +1,161 @@
+{
+  "epoch": 24,
+  "steps": 3192,
+  "exposures": 817152,
+  "split": "validation",
+  "metric": "per_record_event_accuracy",
+  "selection": "epoch24_checkpoint_not_best_checkpoint",
+  "seeds": [
+    20260715,
+    20260716,
+    20260717
+  ],
+  "entries": [
+    {
+      "model": "NMSTPP（原生输入、未加权）",
+      "window": 40,
+      "per_seed": [
+        {
+          "seed": 20260715,
+          "accuracy": 0.6943782188232137,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/nmstpp_official_unweighted/k40/lr0.001/seed20260715/history.json",
+          "last_epoch": 52
+        },
+        {
+          "seed": 20260716,
+          "accuracy": 0.6981350177003024,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/nmstpp_official_unweighted/k40/lr0.001/seed20260716/history.json",
+          "last_epoch": 32
+        },
+        {
+          "seed": 20260717,
+          "accuracy": 0.6964423940304053,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/nmstpp_official_unweighted/k40/lr0.001/seed20260717/history.json",
+          "last_epoch": 52
+        }
+      ],
+      "mean": 0.6963185435179738,
+      "sd": 0.001881459184461853
+    },
+    {
+      "model": "Seq2Event（原生输入、未加权）",
+      "window": 40,
+      "per_seed": [
+        {
+          "seed": 20260715,
+          "accuracy": 0.6962462973857221,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/seq2event_official_unweighted/k40/lr0.003/seed20260715/history.json",
+          "last_epoch": 60
+        },
+        {
+          "seed": 20260716,
+          "accuracy": 0.6959985963608591,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/seq2event_official_unweighted/k40/lr0.003/seed20260716/history.json",
+          "last_epoch": 76
+        },
+        {
+          "seed": 20260717,
+          "accuracy": 0.6994044854527253,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v2/seq2event_official_unweighted/k40/lr0.003/seed20260717/history.json",
+          "last_epoch": 56
+        }
+      ],
+      "mean": 0.6972164597331022,
+      "sd": 0.0018989290038673601
+    },
+    {
+      "model": "LEM（原生版本）",
+      "window": 3,
+      "per_seed": [
+        {
+          "seed": 20260715,
+          "accuracy": 0.6920147382109794,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v1/lem_official/k3/lr0.01/seed20260715/history.json",
+          "last_epoch": 80
+        },
+        {
+          "seed": 20260716,
+          "accuracy": 0.6882166558297468,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v1/lem_official/k3/lr0.01/seed20260716/history.json",
+          "last_epoch": 80
+        },
+        {
+          "seed": 20260717,
+          "accuracy": 0.684975900754456,
+          "steps": 3192,
+          "source": "/home/li/football/paper_1/final_model/runs/baselines_official_v1/lem_official/k3/lr0.01/seed20260717/history.json",
+          "last_epoch": 80
+        }
+      ],
+      "mean": 0.6884024315983941,
+      "sd": 0.0035230941886360847
+    },
+    {
+      "model": "本轮 F",
+      "window": 80,
+      "per_seed": [
+        {
+          "seed": 20260715,
+          "accuracy": 0.7197262903675264,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_B_CXPT_s20260715_lr0.0027/curve.jsonl"
+        },
+        {
+          "seed": 20260716,
+          "accuracy": 0.71836393473078,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_B_CXPT_s20260716_lr0.0027/curve.jsonl"
+        },
+        {
+          "seed": 20260717,
+          "accuracy": 0.7185909940035711,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_B_CXPT_s20260717_lr0.0027/curve.jsonl"
+        }
+      ],
+      "mean": 0.7188937397006259,
+      "sd": 0.000729893442947393
+    },
+    {
+      "model": "本轮当前领先组：C2 当前控球段匹配随机",
+      "window": 16,
+      "per_seed": [
+        {
+          "seed": 20260715,
+          "accuracy": 0.7193857014583398,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_C2_current_phase_control_s20260715_lr0.0027/curve.jsonl"
+        },
+        {
+          "seed": 20260716,
+          "accuracy": 0.7198914243841017,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_C2_current_phase_control_s20260716_lr0.0027/curve.jsonl"
+        },
+        {
+          "seed": 20260717,
+          "accuracy": 0.7200152748965332,
+          "steps": 3192,
+          "source": "/home/li/football/graph_prediction_research/runs/formal_etp_C2_current_phase_control_s20260717_lr0.0027/curve.jsonl"
+        }
+      ],
+      "mean": 0.7197641335796582,
+      "sd": 0.0003335309433794026
+    }
+  ],
+  "limitations": [
+    "Historical baseline inputs and coordinate frames differ from current protocol",
+    "Windows, capacity, heads and training losses differ",
+    "Historical baseline hyperparameters selected using their original training budgets",
+    "No complete three-seed epoch120 baseline comparison available",
+    "Current backbone is common attention encoder, not HGT"
+  ]
+}

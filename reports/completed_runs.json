@@ -1,0 +1,978 @@
+[
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_etp_D00_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_etp_D00_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_etp_D00_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_team_only_D00_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_team_only_D00_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "baseline_calibration",
+    "run_id": "baseline_calibration_team_only_D00_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_core",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_core_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_T",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_T_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_P",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_P_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_PT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_PT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_X",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_X_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_XT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XP",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_XP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XPT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_XPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_C",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_C_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CP",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CPT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CX",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CX_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_1_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_4",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_4_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_8",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_8_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_16_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_32",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_32_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D01_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D10_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D11_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_core",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_core_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_T",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_T_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_P",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_P_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_PT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_PT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_X",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_X_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_XT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XP",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_XP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_XPT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_XPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_C",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_C_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CP",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CPT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CX",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CX_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXP_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXPT_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_1_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_4",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_4_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_8",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_8_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_16_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C1_32",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_32_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_relation_s20260715_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_control_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D01_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D10_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D11_s20260715_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXT_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXP_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXPT_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_1_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_16_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D01_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D10_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D11_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXT_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXP_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXPT_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_1_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_16_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_relation_s20260716_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_control_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D01_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D10_s20260716_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260716,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D11_s20260716_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXT_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXP_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_B_CXPT_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_1_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C1_16_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_player_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_current_phase_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_C2_other_phase_team_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D01_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D10_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_etp_D11_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_CXT",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXT_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_CXP",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXP_s20260717_lr0.0027"
+  },
+  {
+    "condition": "B_CXPT",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_B_CXPT_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C1_1",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_1_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C1_16",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C1_16_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_player_relation",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_player_control",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_player_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_relation",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_current_phase_control",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_current_phase_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_relation",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_relation_s20260717_lr0.0027"
+  },
+  {
+    "condition": "C2_other_phase_team_control",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_C2_other_phase_team_control_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D01",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D01_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D10",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D10_s20260717_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260717,
+    "lr": 0.0027,
+    "mode": "formal",
+    "run_id": "formal_team_only_D11_s20260717_lr0.0027"
+  }
+]

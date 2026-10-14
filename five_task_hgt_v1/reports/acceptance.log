@@ -1,0 +1,18 @@
+test_01_whitelist_and_roster_fields (__main__.FiveTaskTests.test_01_whitelist_and_roster_fields) ... ok
+test_02_pair_merge_is_order_free (__main__.FiveTaskTests.test_02_pair_merge_is_order_free) ... ok
+test_03_units_and_targets (__main__.FiveTaskTests.test_03_units_and_targets) ... ok
+test_04_future_and_target_invariance (__main__.FiveTaskTests.test_04_future_and_target_invariance) ... ok
+test_05_relation_firewall (__main__.FiveTaskTests.test_05_relation_firewall) ... ok
+test_06_shuffled_control (__main__.FiveTaskTests.test_06_shuffled_control) ... ok
+test_07_coordinate_frame_probe (__main__.FiveTaskTests.test_07_coordinate_frame_probe) ... ok
+test_08_padding_and_nodes (__main__.FiveTaskTests.test_08_padding_and_nodes) ... ok
+test_09_fast_hgt_equals_pyg (__main__.FiveTaskTests.test_09_fast_hgt_equals_pyg) ... ok
+test_10_every_condition_trains_and_reloads (__main__.FiveTaskTests.test_10_every_condition_trains_and_reloads) ... ok
+test_11_player_gradient_rule (__main__.FiveTaskTests.test_11_player_gradient_rule) ... ok
+test_12_scoring (__main__.FiveTaskTests.test_12_scoring) ... ok
+test_13_batches_are_deterministic (__main__.FiveTaskTests.test_13_batches_are_deterministic) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 154.952s
+
+OK

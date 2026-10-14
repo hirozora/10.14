@@ -1,0 +1,18 @@
+{
+  "train": {
+    "records": 449291,
+    "valid_endpoints": 422371,
+    "masked_missing_or_placeholder": 26920,
+    "retained_corner_endpoints_in_mixed_types": 5432,
+    "pass_records_with_assist": 351,
+    "pass_records_with_key_pass": 1209
+  },
+  "validation": {
+    "records": 96948,
+    "valid_endpoints": 91055,
+    "masked_missing_or_placeholder": 5893,
+    "retained_corner_endpoints_in_mixed_types": 1241,
+    "pass_records_with_assist": 94,
+    "pass_records_with_key_pass": 266
+  }
+}

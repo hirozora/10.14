@@ -1,0 +1,81 @@
+{
+  "status": "locked",
+  "formula": "3 * D00 sample SD (ddof=1)",
+  "view": "duel_corrected_validation",
+  "tasks": {
+    "etp": {
+      "metric": "etp_loss",
+      "per_seed": [
+        0.036496180891803294,
+        0.036453201347181406,
+        0.03642844785959915
+      ],
+      "sd": 3.427277844722905e-05,
+      "minimum_absolute_improvement": 0.00010281833534168713,
+      "mean": 0.03645927669952795,
+      "etp_relative_equivalent": 0.002820087084805453
+    },
+    "team_only": {
+      "metric": "team_nll",
+      "per_seed": [
+        0.41615027862060816,
+        0.41323975419166764,
+        0.41428088136744445
+      ],
+      "sd": 0.0014747736740336663,
+      "minimum_absolute_improvement": 0.004424321022100999,
+      "mean": 0.41455697139324005,
+      "etp_relative_equivalent": null
+    }
+  },
+  "runs": [
+    {
+      "condition": "D00",
+      "task": "etp",
+      "seed": 20260715,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_etp_D00_s20260715_lr0.0027"
+    },
+    {
+      "condition": "D00",
+      "task": "etp",
+      "seed": 20260716,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_etp_D00_s20260716_lr0.0027"
+    },
+    {
+      "condition": "D00",
+      "task": "etp",
+      "seed": 20260717,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_etp_D00_s20260717_lr0.0027"
+    },
+    {
+      "condition": "D00",
+      "task": "team_only",
+      "seed": 20260715,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_team_only_D00_s20260715_lr0.0027"
+    },
+    {
+      "condition": "D00",
+      "task": "team_only",
+      "seed": 20260716,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_team_only_D00_s20260716_lr0.0027"
+    },
+    {
+      "condition": "D00",
+      "task": "team_only",
+      "seed": 20260717,
+      "lr": 0.0027,
+      "mode": "baseline_calibration",
+      "run_id": "baseline_calibration_team_only_D00_s20260717_lr0.0027"
+    }
+  ]
+}

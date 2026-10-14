@@ -1,0 +1,98 @@
+[
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0003,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D00_s20260715_lr0.0003"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0003,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D11_s20260715_lr0.0003"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0003,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D00_s20260715_lr0.0003"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0003,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D11_s20260715_lr0.0003"
+  },
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0009,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D00_s20260715_lr0.0009"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0009,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D11_s20260715_lr0.0009"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0009,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D00_s20260715_lr0.0009"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0009,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D11_s20260715_lr0.0009"
+  },
+  {
+    "condition": "D00",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D00_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "etp",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "lr_search",
+    "run_id": "lr_search_etp_D11_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D00",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D00_s20260715_lr0.0027"
+  },
+  {
+    "condition": "D11",
+    "task": "team_only",
+    "seed": 20260715,
+    "lr": 0.0027,
+    "mode": "lr_search",
+    "run_id": "lr_search_team_only_D11_s20260715_lr0.0027"
+  }
+]

@@ -1,0 +1,230 @@
+{
+  "protocol": {
+    "version": "signal_screening_v1_stage3a_match_history",
+    "stage": "Question 3a, approved by the user on 2026-10-15: the candidate's history within the current match only (no earlier matches). Same fixed schedule, seeds and learning rate as stage 2; M2_pooled of stage 2 is the reference and is not rerun. Question 3b (pair relations with the anchor actor and with every window actor) is a separate stage that waits for the user's choice of its base condition.",
+    "root": "/home/li/football/graph_prediction_research/signal_screening_v1",
+    "five_task_src": "/home/li/football/graph_prediction_research/five_task_hgt_v1/src",
+    "parent_src": "/home/li/football/graph_prediction_research/src",
+    "paths": {
+      "raw_events": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/events/events_England.json",
+      "raw_matches": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/matches/matches_England.json",
+      "manifests": {
+        "train": "/home/li/football/soccer_cohig_publish/configs/manifests/England_train.json",
+        "validation": "/home/li/football/soccer_cohig_publish/configs/manifests/England_validation.json",
+        "test": "/home/li/football/soccer_cohig_publish/configs/manifests/England_test.json"
+      },
+      "data": "/home/li/football/graph_prediction_research/five_task_hgt_v1/data",
+      "candidates": "/home/li/football/graph_prediction_research/signal_screening_v1/data",
+      "runs": "/home/li/football/graph_prediction_research/signal_screening_v1/runs_stage3a",
+      "reports": "/home/li/football/graph_prediction_research/signal_screening_v1/reports_stage3a",
+      "acceptance": "/home/li/football/graph_prediction_research/signal_screening_v1/reports/acceptance.json"
+    },
+    "questions": {
+      "Q3a": "Does the candidate's own history beyond the 80-unit window, within the current match, add information? Contrast H_match - M2_pooled (stage 2), with H_match - H_match_shuffled as the binding control."
+    },
+    "dataset": {
+      "window_units": 80,
+      "history_events_per_candidate": 32,
+      "roster_slots": 40,
+      "expected_targets": {
+        "train": 390185,
+        "validation": 83860
+      }
+    },
+    "candidates": {
+      "rule": "on-pitch at the anchor using only information available then",
+      "starter": "candidate until substituted off or sent off",
+      "incoming": "candidate once clock >= (minute + 1) * 60 s or once observed acting at or before the anchor",
+      "outgoing": "removed once clock >= (minute + 1) * 60 s",
+      "sent_off": "removed after a foul with tag 1701 or 1703 strictly before the anchor",
+      "clock": "seconds in period plus 2700 s for the second half",
+      "unreachable": "targets outside the candidate set count as misses in top-k and are excluded from the loss and NLL; their number is reported"
+    },
+    "context": {
+      "identity_free": "every condition with context_identity false",
+      "event_identity": "conditions with context_identity true add to each window unit token the static candidate state of each of its roster participants (the same Projection as the candidate side, so context and candidates share one player embedding); merged duels add both participants",
+      "inputs": [
+        "Raw10 type",
+        "subtype code",
+        "period",
+        "seconds",
+        "gap to previous unit",
+        "location in anchor frame",
+        "location validity",
+        "merged-duel flag",
+        "team relation of participants to the reference team",
+        "online phase relations"
+      ],
+      "excluded": [
+        "player identities of any unit",
+        "whether a unit was performed by the anchor actor"
+      ],
+      "backbone": {
+        "layers": 2,
+        "hidden": 64,
+        "heads": 4,
+        "ffn": 128,
+        "dropout": 0.1,
+        "time_bias_mlp_hidden": 16,
+        "readout": "anchor_mean"
+      }
+    },
+    "conditions": {
+      "H_match": {
+        "static": true,
+        "summary": true,
+        "history": "pooled",
+        "context_identity": false,
+        "scorer": "mlp",
+        "scope": "match",
+        "pairs": "none"
+      },
+      "H_match_shuffled": {
+        "static": true,
+        "summary": true,
+        "history": "pooled_shuffled_within_team",
+        "context_identity": false,
+        "scorer": "mlp",
+        "scope": "match",
+        "pairs": "none"
+      }
+    },
+    "scorers": {
+      "mlp": "MLP([context, candidate state])",
+      "mlp_plus_dot": "MLP([context, candidate state]) + (W context) . (candidate state) / sqrt(64); W is a 64 x 64 linear map without bias, initialised at zero, so at initialisation the scores equal those of the MLP scorer"
+    },
+    "candidate_features": {
+      "static": [
+        "global player id (train vocabulary)",
+        "role",
+        "foot",
+        "height",
+        "weight",
+        "metadata flag",
+        "starter",
+        "same team as the reference team"
+      ],
+      "summary": [
+        "log1p appearances in the window",
+        "units since last appearance / 80",
+        "log1p seconds since last appearance",
+        "never appeared in the window",
+        "is the anchor actor"
+      ],
+      "history_event": [
+        "Raw10 type",
+        "subtype code",
+        "location in anchor frame",
+        "location validity",
+        "merged-duel flag",
+        "units before the anchor / 80",
+        "log1p seconds before the anchor",
+        "unit team relation to the reference team"
+      ],
+      "match_scope": {
+        "summary_added": [
+          "log1p acting units in the match up to the anchor",
+          "log1p units since the latest of them / 8",
+          "none yet in the match"
+        ],
+        "history": "the latest 32 acting units of the whole match up to the anchor instead of the window; units before the anchor / 80 saturates at 79/80, and two features are added: outside the window, log1p units before the anchor / 8",
+        "shuffled_control": "H_match_shuffled swaps whole histories among same-team on-pitch candidates per sample, as M2_shuffled; summaries stay real"
+      }
+    },
+    "shuffle_seed": 20261016,
+    "training": {
+      "seeds": [
+        20260715,
+        20260716,
+        20260717
+      ],
+      "precision": "float32",
+      "deterministic": true,
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "gradient_clip": 5,
+      "batch_size": 256,
+      "targets_per_match": 128,
+      "targets_per_epoch": 34048,
+      "schedule": {
+        "kind": "fixed_steps",
+        "milestones": [
+          96,
+          108
+        ],
+        "factor": 0.3,
+        "rule": "constant learning rate for epochs 1-96, x0.3 for epochs 97-108 and x0.09 for epochs 109-120; no plateau stopping"
+      },
+      "curve_only_validation_epochs": [
+        1,
+        2
+      ],
+      "validation_every": 4,
+      "max_epochs": 120,
+      "monitor": "player_nll_reachable",
+      "loader_workers": 4,
+      "prefetch_factor": 2
+    },
+    "learning_rate": {
+      "value": 0.0027,
+      "locked_by": "/home/li/football/graph_prediction_research/signal_screening_v1/reports/selected_learning_rate.json",
+      "rule": "the stage-1 lock (search on M0_static and M3_attention); no new search"
+    },
+    "decision": {
+      "positive": "top-1 on single-actor targets +1.0 pp or player NLL -0.03, all 3 seeds in the same direction and the match-bootstrap 95% CI excluding zero",
+      "primary_view": "single-actor targets; unreachable targets count as misses for top-k"
+    },
+    "execution": {
+      "python": "/home/li/football/paper_1/Phase_1/.venv/bin/python",
+      "gpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "jobs_per_gpu": 2
+    },
+    "evaluation": {
+      "bootstrap": {
+        "replicates": 10000,
+        "seed": 20261014
+      }
+    },
+    "report": {
+      "reference_runs": {
+        "M2_pooled": {
+          "runs": "/home/li/football/graph_prediction_research/signal_screening_v1/runs_stage2",
+          "version": "signal_screening_v1_stage2_fixed_schedule"
+        }
+      },
+      "contrasts": [
+        [
+          "H_match",
+          "M2_pooled",
+          "Q3a: own history and counts from the whole match over the window only"
+        ],
+        [
+          "H_match",
+          "H_match_shuffled",
+          "Q3a control: whole-match history content bound to the right player"
+        ]
+      ]
+    },
+    "test_evaluated": false
+  },
+  "condition_id": "H_match_shuffled",
+  "condition": {
+    "static": true,
+    "summary": true,
+    "history": "pooled_shuffled_within_team",
+    "context_identity": false,
+    "scorer": "mlp",
+    "scope": "match",
+    "pairs": "none"
+  },
+  "seed": 20260715,
+  "lr": 0.0027,
+  "mode": "formal",
+  "device": "cuda:0",
+  "epochs": 120
+}

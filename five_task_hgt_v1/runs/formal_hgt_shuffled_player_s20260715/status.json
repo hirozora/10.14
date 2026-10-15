@@ -1,7 +1,9 @@
 {
-  "status": "running",
-  "pid": 1073494,
-  "epoch": 47,
-  "best_epoch": 44,
-  "best_monitor": 0.38688146867783346
+  "status": "complete",
+  "stop_reason": "plateau_after_two_decays",
+  "epochs": 120,
+  "best_epoch": 108,
+  "best_monitor": 0.3818284031497005,
+  "optimizer_steps": 15960,
+  "cumulative_targets": 4085760
 }

@@ -1,0 +1,14 @@
+2026-10-15 05:49:26 formal-only stage signal_screening_v1_stage3a_match_history: 2 conditions x 3 seeds, locked lr 0.0027
+2026-10-15 05:49:26 start formal formal_H_match_s20260715 gpu0
+2026-10-15 05:49:26 start formal formal_H_match_shuffled_s20260715 gpu0
+2026-10-15 05:49:26 start formal formal_H_match_s20260716 gpu1
+2026-10-15 05:49:26 start formal formal_H_match_shuffled_s20260716 gpu1
+2026-10-15 05:49:26 start formal formal_H_match_s20260717 gpu2
+2026-10-15 05:49:26 start formal formal_H_match_shuffled_s20260717 gpu2
+2026-10-15 07:37:47 finish formal_H_match_s20260715 exit 0
+2026-10-15 07:37:47 finish formal_H_match_s20260716 exit 0
+2026-10-15 07:38:07 finish formal_H_match_s20260717 exit 0
+2026-10-15 07:38:27 finish formal_H_match_shuffled_s20260716 exit 0
+2026-10-15 07:38:37 finish formal_H_match_shuffled_s20260715 exit 0
+2026-10-15 07:38:37 finish formal_H_match_shuffled_s20260717 exit 0
+2026-10-15 07:38:39 queue complete

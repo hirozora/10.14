@@ -1,0 +1,18 @@
+{
+  "status": "running",
+  "stage": "formal",
+  "active": [
+    "formal_M0_static_s20260715",
+    "formal_M1_summary_s20260715",
+    "formal_M2_pooled_s20260715",
+    "formal_M2_shuffled_s20260715",
+    "formal_M3_attention_s20260715",
+    "formal_M0_static_s20260716",
+    "formal_M1_summary_s20260716",
+    "formal_M2_pooled_s20260716"
+  ],
+  "pending": 7,
+  "failed": [],
+  "pid": 1208033,
+  "test_evaluated": false
+}

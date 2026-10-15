@@ -1,0 +1,53 @@
+2026-10-14 15:55:11 waiting for the five-task queue
+2026-10-14 21:28:11 five-task queue complete; starting
+2026-10-14 21:28:11 start lr_search lr_M0_static_lr0.0009 gpu0
+2026-10-14 21:28:11 start lr_search lr_M0_static_lr0.0027 gpu0
+2026-10-14 21:28:11 start lr_search lr_M0_static_lr0.0081 gpu1
+2026-10-14 21:28:11 start lr_search lr_M3_attention_lr0.0009 gpu1
+2026-10-14 21:28:11 start lr_search lr_M3_attention_lr0.0027 gpu2
+2026-10-14 21:28:11 start lr_search lr_M3_attention_lr0.0081 gpu2
+2026-10-14 21:40:41 finish lr_M0_static_lr0.0027 exit 0
+2026-10-14 21:40:51 finish lr_M0_static_lr0.0009 exit 0
+2026-10-14 21:40:51 finish lr_M0_static_lr0.0081 exit 0
+2026-10-14 21:43:21 finish lr_M3_attention_lr0.0009 exit 0
+2026-10-14 21:43:41 finish lr_M3_attention_lr0.0027 exit 0
+2026-10-14 21:43:41 finish lr_M3_attention_lr0.0081 exit 0
+2026-10-14 21:43:41 learning rate locked 0.0027
+2026-10-14 21:43:41 start formal formal_M0_static_s20260715 gpu0
+2026-10-14 21:43:41 start formal formal_M1_summary_s20260715 gpu0
+2026-10-14 21:43:41 start formal formal_M2_pooled_s20260715 gpu1
+2026-10-14 21:43:41 start formal formal_M2_shuffled_s20260715 gpu1
+2026-10-14 21:43:41 start formal formal_M3_attention_s20260715 gpu2
+2026-10-14 21:43:41 start formal formal_M0_static_s20260716 gpu2
+2026-10-14 21:43:41 start formal formal_M1_summary_s20260716 gpu3
+2026-10-14 21:43:41 start formal formal_M2_pooled_s20260716 gpu3
+2026-10-14 21:52:04 resume formal stage: adopt 8 runs of queue pid 1208033, launch 10 with lr 0.0027
+2026-10-14 23:01:44 finish formal_M1_summary_s20260716 (adopted) status complete
+2026-10-14 23:01:44 start formal formal_M0_ctx_identity_s20260715 gpu3
+2026-10-14 23:04:14 finish formal_M0_static_s20260715 (adopted) status complete
+2026-10-14 23:04:14 start formal formal_M2_shuffled_s20260716 gpu0
+2026-10-14 23:04:24 finish formal_M1_summary_s20260715 (adopted) status complete
+2026-10-14 23:04:24 start formal formal_M3_attention_s20260716 gpu0
+2026-10-14 23:04:34 finish formal_M0_static_s20260716 (adopted) status complete
+2026-10-14 23:04:34 start formal formal_M0_ctx_identity_s20260716 gpu2
+2026-10-14 23:38:25 finish formal_M2_pooled_s20260716 (adopted) status complete
+2026-10-14 23:38:25 start formal formal_M0_static_s20260717 gpu3
+2026-10-14 23:38:55 finish formal_M2_pooled_s20260715 (adopted) status complete
+2026-10-14 23:38:55 start formal formal_M1_summary_s20260717 gpu1
+2026-10-14 23:39:15 finish formal_M2_shuffled_s20260715 (adopted) status complete
+2026-10-14 23:39:15 start formal formal_M2_pooled_s20260717 gpu1
+2026-10-14 23:39:25 finish formal_M3_attention_s20260715 (adopted) status complete
+2026-10-14 23:39:25 start formal formal_M2_shuffled_s20260717 gpu2
+2026-10-15 00:22:25 finish formal_M0_ctx_identity_s20260715 exit 0
+2026-10-15 00:22:25 start formal formal_M3_attention_s20260717 gpu3
+2026-10-15 00:29:15 finish formal_M0_ctx_identity_s20260716 exit 0
+2026-10-15 00:29:15 start formal formal_M0_ctx_identity_s20260717 gpu2
+2026-10-15 00:55:15 finish formal_M2_shuffled_s20260716 exit 0
+2026-10-15 00:56:15 finish formal_M3_attention_s20260716 exit 0
+2026-10-15 00:58:15 finish formal_M0_static_s20260717 exit 0
+2026-10-15 00:58:35 finish formal_M1_summary_s20260717 exit 0
+2026-10-15 01:12:05 finish formal_M2_pooled_s20260717 exit 0
+2026-10-15 01:13:05 finish formal_M2_shuffled_s20260717 exit 0
+2026-10-15 01:20:45 finish formal_M0_ctx_identity_s20260717 exit 0
+2026-10-15 01:25:45 finish formal_M3_attention_s20260717 exit 0
+2026-10-15 01:25:48 queue complete

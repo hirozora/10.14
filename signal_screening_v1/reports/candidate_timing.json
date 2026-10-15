@@ -1,0 +1,12 @@
+{
+  "train": {
+    "substitutions_in": 1456,
+    "substitutions_out": 1456,
+    "red_cards": 29
+  },
+  "validation": {
+    "substitutions_in": 304,
+    "substitutions_out": 304,
+    "red_cards": 9
+  }
+}

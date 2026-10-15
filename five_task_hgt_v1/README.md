@@ -10,6 +10,8 @@
 - `src/scoring.py`：逐样本统计、比赛级统计量、指标与配对 bootstrap。
 - `src/fit.py`：单次训练；`src/queue_runs.py`：学习率搜索、锁定、正式运行与报告；`src/report.py`：汇总表、对比与学习曲线。
 - `tests/test_five_task.py`：13 项验收（结果在 `reports/acceptance.json`）。
+- `src/subsets.py`：按子集（下一执行者上次出手距今、锚点类型、目标类型）的指标，写入 `reports/subsets.{json,md}`；`src/early.py`：训练初期对比。
+- `analysis/oracle_union.py`：多模型并集上限诊断；`analysis/player_gap_by_recency.py`：Player top-1 按下一执行者上次出手距今分组（含 seed 标准差），以及 hgt_full 与各对照之差的分组分解，写入 `reports/player_gap_by_recency.json`。
 - `data/`、`runs/`、`reports/`：数据、运行与报告。`archive/interrupted_cpu_affinity_20261014/`：第一次启动因 DataLoader 子进程被绑到单核而停止的记录，未用于结果。
 
 ## 运行
@@ -19,7 +21,9 @@ cd /home/li/football/graph_prediction_research/five_task_hgt_v1
 PY=/home/li/football/paper_1/Phase_1/.venv/bin/python
 $PY -B src/units.py --config configs/experiment.json          # 已完成
 $PY -B tests/test_five_task.py                                # 已通过
-$PY -B src/queue_runs.py --config configs/experiment.json     # 后台运行中
+$PY -B src/queue_runs.py --config configs/experiment.json     # 已完成（2026-10-14 21:28）
+$PY -B src/subsets.py --config configs/experiment.json
+$PY -B analysis/player_gap_by_recency.py --config configs/experiment.json
 cat reports/queue_status.json; tail -n 20 reports/queue.log
 ```
 

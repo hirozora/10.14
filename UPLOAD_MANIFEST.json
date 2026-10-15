@@ -1,10 +1,10 @@
 {
-  "snapshot_time": "2026-10-14T14:22:37.027804+09:00",
+  "snapshot_time": "2026-10-15T13:26:46.485370+08:00",
   "source_directory": "/home/li/football/graph_prediction_research",
-  "included_files": 1103,
-  "included_bytes": 17890918,
-  "excluded_files": 1004,
-  "excluded_bytes": 7659979898,
+  "included_files": 1622,
+  "included_bytes": 27163966,
+  "excluded_files": 1362,
+  "excluded_bytes": 10496233311,
   "excluded": [
     {
       "path": "data/train_current_phase_20261014.npz",
@@ -237,6 +237,11 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/reports/oracle_union_predictions.npz",
+      "bytes": 1284130,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260715/best.pt",
       "bytes": 1969373,
       "reason": "binary experiment artifact or Python cache"
@@ -262,6 +267,56 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260716/best.pt",
+      "bytes": 1969373,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260716/last.pt",
+      "bytes": 5594981,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260717/best.pt",
+      "bytes": 1969373,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260717/last.pt",
+      "bytes": 5594981,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_anchor_readout_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260715/best.pt",
       "bytes": 797347,
       "reason": "binary experiment artifact or Python cache"
@@ -283,6 +338,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260716/best.pt",
+      "bytes": 797347,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260716/last.pt",
+      "bytes": 2288315,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260717/best.pt",
+      "bytes": 797347,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260717/last.pt",
+      "bytes": 2288315,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_events_only_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -337,6 +442,31 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_full_s20260717/best.pt",
+      "bytes": 1969373,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_full_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_full_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_full_s20260717/last.pt",
+      "bytes": 5594981,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_full_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260715/best.pt",
       "bytes": 1918203,
       "reason": "binary experiment artifact or Python cache"
@@ -358,6 +488,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260716/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260716/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260717/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260717/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_member_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -387,6 +567,56 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260716/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260716/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260717/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260717/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_player_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260715/best.pt",
       "bytes": 1706301,
       "reason": "binary experiment artifact or Python cache"
@@ -408,6 +638,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260716/best.pt",
+      "bytes": 1706301,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260716/last.pt",
+      "bytes": 4877903,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260717/best.pt",
+      "bytes": 1706301,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260717/last.pt",
+      "bytes": 4877903,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_possession_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -462,6 +742,31 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_seq_s20260717/best.pt",
+      "bytes": 1790278,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_seq_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_seq_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_seq_s20260717/last.pt",
+      "bytes": 5054345,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_seq_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260715/best.pt",
       "bytes": 1918203,
       "reason": "binary experiment artifact or Python cache"
@@ -483,6 +788,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260716/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260716/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260717/best.pt",
+      "bytes": 1918203,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260717/last.pt",
+      "bytes": 5440477,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_team_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -512,6 +867,56 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260716/best.pt",
+      "bytes": 1701309,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260716/last.pt",
+      "bytes": 4862735,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260717/best.pt",
+      "bytes": 1701309,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260717/last.pt",
+      "bytes": 4862735,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_type_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260715/best.pt",
       "bytes": 1700029,
       "reason": "binary experiment artifact or Python cache"
@@ -533,6 +938,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260716/best.pt",
+      "bytes": 1700029,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260716/last.pt",
+      "bytes": 4858511,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260717/best.pt",
+      "bytes": 1700029,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260717/last.pt",
+      "bytes": 4858511,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_no_zone_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -562,6 +1017,56 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260716/best.pt",
+      "bytes": 1969373,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260716/last.pt",
+      "bytes": 5594981,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260717/best.pt",
+      "bytes": 1969373,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260717/last.pt",
+      "bytes": 5594981,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_shuffled_player_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260715/best.pt",
       "bytes": 1815863,
       "reason": "binary experiment artifact or Python cache"
@@ -583,6 +1088,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260716/best.pt",
+      "bytes": 1815863,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260716/last.pt",
+      "bytes": 5131597,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260717/best.pt",
+      "bytes": 1815863,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260717/last.pt",
+      "bytes": 5131597,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_hgt_untyped_seq_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -612,6 +1167,56 @@
       "reason": "binary experiment artifact or Python cache"
     },
     {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260716/best.pt",
+      "bytes": 642612,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260716/last.pt",
+      "bytes": 1939442,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260717/best.pt",
+      "bytes": 642612,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260717/last.pt",
+      "bytes": 1939442,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_anchor_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
       "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260715/best.pt",
       "bytes": 642612,
       "reason": "binary experiment artifact or Python cache"
@@ -633,6 +1238,56 @@
     },
     {
       "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260716/best.pt",
+      "bytes": 642612,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260716/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260716/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260716/last.pt",
+      "bytes": 1939442,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260717/best.pt",
+      "bytes": 642612,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260717/best_match_statistics.npz",
+      "bytes": 213318,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260717/best_validation_statistics.npz",
+      "bytes": 4363762,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260717/last.pt",
+      "bytes": 1939442,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "five_task_hgt_v1/runs/formal_seq_mean_s20260717/sample_order.npy",
       "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
@@ -4989,6 +5644,1141 @@
     {
       "path": "runs/lr_search_team_only_D11_s20260715_lr0.0027/sample_order.npy",
       "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/data/train_candidates.npz",
+      "bytes": 341492,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/data/validation_candidates.npz",
+      "bytes": 73972,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260715/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260715/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260716/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260716/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260717/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260717/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_ctx_identity_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260715/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260715/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260716/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260716/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260717/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260717/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M0_static_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260715/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260715/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260716/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260716/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260717/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260717/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M1_summary_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260715/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260715/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260716/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260716/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260717/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260717/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_pooled_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260715/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260715/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260716/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260716/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260717/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260717/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M2_shuffled_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260715/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260715/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260716/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260716/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260717/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260717/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/formal_M3_attention_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0009/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0009/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0009/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0009/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0009/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0027/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0027/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0027/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0027/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0027/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0081/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0081/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0081/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0081/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M0_static_lr0.0081/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0009/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0009/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0009/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0009/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0009/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0027/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0027/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0027/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0027/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0027/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0081/best.pt",
+      "bytes": 570498,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0081/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0081/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0081/last.pt",
+      "bytes": 1721206,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs/lr_M3_attention_lr0.0081/sample_order.npy",
+      "bytes": 6537344,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260715/best.pt",
+      "bytes": 478690,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260715/last.pt",
+      "bytes": 1442934,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260716/best.pt",
+      "bytes": 478690,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260716/last.pt",
+      "bytes": 1442934,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260717/best.pt",
+      "bytes": 478690,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260717/last.pt",
+      "bytes": 1442934,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_dot_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260715/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260715/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260716/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260716/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260717/best.pt",
+      "bytes": 462056,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260717/last.pt",
+      "bytes": 1392842,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M0_ctx_identity_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260715/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260715/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260716/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260716/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260717/best.pt",
+      "bytes": 464092,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260717/last.pt",
+      "bytes": 1399330,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M1_summary_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260715/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260715/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260716/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260716/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260717/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260717/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_pooled_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260715/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260715/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260716/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260716/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260717/best.pt",
+      "bytes": 519142,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260717/last.pt",
+      "bytes": 1565742,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage2/formal_M2_shuffled_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260715/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260715/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260716/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260716/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260717/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260717/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_s20260717/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260715/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260715/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260715/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260715/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260715/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260716/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260716/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260716/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260716/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260716/sample_order.npy",
+      "bytes": 32686208,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260717/best.pt",
+      "bytes": 520422,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260717/best_match_statistics.npz",
+      "bytes": 11456,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260717/best_validation_statistics.npz",
+      "bytes": 6712602,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260717/last.pt",
+      "bytes": 1569582,
+      "reason": "binary experiment artifact or Python cache"
+    },
+    {
+      "path": "signal_screening_v1/runs_stage3a/formal_H_match_shuffled_s20260717/sample_order.npy",
+      "bytes": 32686208,
       "reason": "binary experiment artifact or Python cache"
     },
     {

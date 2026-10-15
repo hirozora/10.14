@@ -88,3 +88,13 @@ formal_hgt_events_only_s20260715 epoch 87 train 0.416908 best 0.4246089134981603
 formal_hgt_events_only_s20260715 epoch 88 train 0.418107 best 0.4242773977060996 seconds 2643.3
 formal_hgt_events_only_s20260715 epoch 89 train 0.416537 best 0.4242773977060996 seconds 2662.9
 formal_hgt_events_only_s20260715 epoch 90 train 0.416893 best 0.4242773977060996 seconds 2682.2
+formal_hgt_events_only_s20260715 epoch 91 train 0.416594 best 0.4242773977060996 seconds 2702.5
+formal_hgt_events_only_s20260715 epoch 92 train 0.416789 best 0.42396869923333785 seconds 2763.3
+formal_hgt_events_only_s20260715 epoch 93 train 0.416287 best 0.42396869923333785 seconds 2783.5
+formal_hgt_events_only_s20260715 epoch 94 train 0.417185 best 0.42396869923333785 seconds 2803.5
+formal_hgt_events_only_s20260715 epoch 95 train 0.417621 best 0.42396869923333785 seconds 2823.6
+formal_hgt_events_only_s20260715 epoch 96 train 0.415775 best 0.42396869923333785 seconds 2881.5
+formal_hgt_events_only_s20260715 epoch 97 train 0.416772 best 0.42396869923333785 seconds 2901.1
+formal_hgt_events_only_s20260715 epoch 98 train 0.416387 best 0.42396869923333785 seconds 2920.5
+formal_hgt_events_only_s20260715 epoch 99 train 0.416195 best 0.42396869923333785 seconds 2940.8
+formal_hgt_events_only_s20260715 epoch 100 train 0.416147 best 0.42396869923333785 seconds 3001.3

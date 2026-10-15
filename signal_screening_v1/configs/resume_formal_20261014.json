@@ -1,0 +1,15 @@
+{
+  "reason": "The first queue process (pid 1208033) was stopped at 2026-10-14 21:43:46 to add M0_ctx_identity at the user's request. It had launched these eight formal runs 5 s earlier with the code in archive/before_context_identity_20261014, which test_13 shows the current code reproduces exactly for the five original conditions.",
+  "interrupted_queue_pid": 1208033,
+  "learning_rate": 0.0027,
+  "adopted": [
+    {"run_id": "formal_M0_static_s20260715", "pid": 1292950, "gpu": 0},
+    {"run_id": "formal_M1_summary_s20260715", "pid": 1292951, "gpu": 0},
+    {"run_id": "formal_M2_pooled_s20260715", "pid": 1292952, "gpu": 1},
+    {"run_id": "formal_M2_shuffled_s20260715", "pid": 1292953, "gpu": 1},
+    {"run_id": "formal_M3_attention_s20260715", "pid": 1292954, "gpu": 2},
+    {"run_id": "formal_M0_static_s20260716", "pid": 1292955, "gpu": 2},
+    {"run_id": "formal_M1_summary_s20260716", "pid": 1292956, "gpu": 3},
+    {"run_id": "formal_M2_pooled_s20260716", "pid": 1292957, "gpu": 3}
+  ]
+}

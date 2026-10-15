@@ -1,18 +1,6 @@
 {
-  "status": "running",
-  "stage": "formal",
-  "active": [
-    "formal_hgt_no_possession_s20260715",
-    "formal_hgt_shuffled_player_s20260715",
-    "formal_hgt_anchor_readout_s20260715",
-    "formal_hgt_events_only_s20260715",
-    "formal_seq_mean_s20260715",
-    "formal_seq_anchor_s20260715",
-    "formal_hgt_full_s20260716",
-    "formal_hgt_no_seq_s20260716"
-  ],
-  "pending": 26,
-  "failed": [],
+  "status": "complete",
+  "stage": "report",
   "pid": 1029498,
   "test_evaluated": false
 }

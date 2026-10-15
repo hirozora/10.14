@@ -13,20 +13,20 @@
 
 ## 执行顺序
 
-| 顺序 | 工作 | 初始状态 |
+| 顺序 | 工作 | 状态（2026-10-15 核对） |
 |---|---|---|
 | A | 训练／验证数据重建与全部实现验收 | 已完成，15 项验收通过 |
-| 校准 | 分任务在 D00/D11 上进行三点学习率搜索，再做 D00 三种子阈值校准 | 运行中 |
-| B | 16 个信息组合及 F+Z | 已排队，等待校准 |
-| C | 历史长度与三条关系规则的固定数量选择 | 已排队，等待校准 |
-| D | 连接 × 偏置完整 2×2 | 已排队，等待校准 |
-| 确认 | 补齐预登记条件的三种子结果 | 待执行 |
-| E | 达到采用标准后进行跨模型验证 | 等待门槛 |
+| 校准 | 分任务在 D00/D11 上进行三点学习率搜索，再做 D00 三种子阈值校准 | 已完成 |
+| B | 16 个信息组合及 F+Z | 已完成 |
+| C | 历史长度与三条关系规则的固定数量选择 | 已完成 |
+| D | 连接 × 偏置完整 2×2 | 已完成 |
+| 确认 | 补齐预登记条件的三种子结果 | 已完成 |
+| E | 达到采用标准后进行跨模型验证 | 未启动，见采用判据报告 |
 | 测试 | 配置全部锁定后统一复核 | 未开放 |
 
 用户追加授权：协议与配置完成后，执行数据重建并启动训练。所有正式训练必须先通过阶段 A。旧代码、数据、结果和检查点不修改；本目录的模型从头训练。
 
-表格记录本次启动时的状态；实时进度见 [队列状态](reports/queue_status.json) 和 [队列日志](reports/queue.log)。测试集已有历史使用记录，最终评估应标记为复核。
+状态依据 [队列状态](reports/queue_status.json) 和 [队列日志](reports/queue.log)。队列完成不代表所有条件已经收敛；各运行另记停止原因。测试集已有历史使用记录，最终评估应标记为复核。
 
 ## 当前产物
 
@@ -37,12 +37,23 @@
 - [学习率预实验清单](reports/lr_search_plan.json)
 - [运行说明](RUNNING.md)
 
-后续按流程生成 `selected_learning_rates.json`、`thresholds.json`、`formal_plan.json`、阶段报告与 `external_gate.json`。队列完成 B/C/D 后输出跨模型采用判据，不提前训练 HGT/GRU，不自动开启测试集。
+已生成 `selected_learning_rates.json`、`thresholds.json`、`formal_plan.json`、[阶段结果](reports/stage_results.json)与[跨模型采用判据](reports/external_gate.json)。本协议的阶段 E 未自动启动，测试集未评估；下列追加实验采用各自独立协议。
 
 ## 历史终点追加实验
 
-按用户追加要求，已在 [history_endpoints_v1](history_endpoints_v1/README.md) 实现一个独立 ETP 条件：固定当前最好组 `C2_current_phase_control`，加入历史有效终点，只屏蔽锚点终点；Raw10 与 Pass 标签不变。数据已构建、8 项验收通过，后台等待原队列成功结束后执行三个 seed。原实验协议、配置、代码和结果不变。
+按用户追加要求，已在 [history_endpoints_v1](history_endpoints_v1/README.md) 完成一个独立 ETP 条件的三个 seed：固定 `C2_current_phase_control`，加入历史有效终点，只屏蔽锚点终点；Raw10 与 Pass 标签不变。后续复核发现成对对抗中的历史终点泄露，本轮结果已标记无效，不能作为性能提升证据。原实验产物保留用于审计。
 
 ## 合并对抗后的 5 任务 HGT（2026-10-14）
 
 历史终点追加实验经复核为泄露（见其 README 顶部说明）。按用户要求，成对对抗合并为一个事件，在干净信息集上运行 5 任务 HGT 并逐项检验关系作用，见 [five_task_hgt_v1](five_task_hgt_v1/README.md)。
+
+42 个正式运行已完成；验证集三种子结果见 [汇总表](five_task_hgt_v1/reports/tables.md)。测试集未评估。
+
+## 下一执行球员的最小信号筛查（2026-10-14）
+
+检验动态球员历史是否有独立于静态身份、频率和最近出现的信息，以及是否需要候选条件化注意力，见 [signal_screening_v1](signal_screening_v1/README.md)。
+
+- [阶段 1](signal_screening_v1/reports/REPORT.md)：18 个正式运行已完成。
+- [阶段 2：固定学习率日程](signal_screening_v1/reports_stage2/REPORT.md)：15 个运行已完成。
+- [阶段 3a：本场更长历史](signal_screening_v1/reports_stage3a/REPORT.md)：6 个运行已完成。
+- 阶段 3b 的球员间关系代码已实现，尚未启动。测试集未评估。

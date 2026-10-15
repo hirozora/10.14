@@ -1,0 +1,220 @@
+{
+  "protocol": {
+    "version": "signal_screening_v1",
+    "root": "/home/li/football/graph_prediction_research/signal_screening_v1",
+    "five_task_src": "/home/li/football/graph_prediction_research/five_task_hgt_v1/src",
+    "parent_src": "/home/li/football/graph_prediction_research/src",
+    "paths": {
+      "raw_events": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/events/events_England.json",
+      "raw_matches": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/matches/matches_England.json",
+      "manifests": {
+        "train": "/home/li/football/soccer_cohig_publish/configs/manifests/England_train.json",
+        "validation": "/home/li/football/soccer_cohig_publish/configs/manifests/England_validation.json",
+        "test": "/home/li/football/soccer_cohig_publish/configs/manifests/England_test.json"
+      },
+      "data": "/home/li/football/graph_prediction_research/five_task_hgt_v1/data",
+      "candidates": "/home/li/football/graph_prediction_research/signal_screening_v1/data",
+      "runs": "/home/li/football/graph_prediction_research/signal_screening_v1/runs",
+      "reports": "/home/li/football/graph_prediction_research/signal_screening_v1/reports"
+    },
+    "questions": {
+      "Q1": "Does dynamic player history add predictive information beyond static identity, appearance frequency and recency? Contrast M2 - M1, with M2 - M2_shuffled as the binding control.",
+      "Q2": "If so, is candidate-conditioned history attention needed to use it? Contrast M3 - M2.",
+      "Q3": "Only if Q1 or Q2 is positive: longer history scope and pairwise relations, run as a separate stage after review.",
+      "sequence_baseline": "Added 2026-10-14 at the user's request: a sequence model with player identities attached to the window events and static candidates (M0_ctx_identity). Contrasts M0_ctx_identity - M0_static, M1_summary - M0_ctx_identity and M3_attention - M0_ctx_identity."
+    },
+    "dataset": {
+      "window_units": 80,
+      "history_events_per_candidate": 32,
+      "roster_slots": 40,
+      "expected_targets": {
+        "train": 390185,
+        "validation": 83860
+      }
+    },
+    "candidates": {
+      "rule": "on-pitch at the anchor using only information available then",
+      "starter": "candidate until substituted off or sent off",
+      "incoming": "candidate once clock >= (minute + 1) * 60 s or once observed acting at or before the anchor",
+      "outgoing": "removed once clock >= (minute + 1) * 60 s",
+      "sent_off": "removed after a foul with tag 1701 or 1703 strictly before the anchor",
+      "clock": "seconds in period plus 2700 s for the second half",
+      "unreachable": "targets outside the candidate set count as misses in top-k and are excluded from the loss and NLL; their number is reported"
+    },
+    "context": {
+      "identity_free": "every condition with context_identity false",
+      "event_identity": "conditions with context_identity true add to each window unit token the static candidate state of each of its roster participants (the same Projection as the candidate side, so context and candidates share one player embedding); merged duels add both participants",
+      "inputs": [
+        "Raw10 type",
+        "subtype code",
+        "period",
+        "seconds",
+        "gap to previous unit",
+        "location in anchor frame",
+        "location validity",
+        "merged-duel flag",
+        "team relation of participants to the reference team",
+        "online phase relations"
+      ],
+      "excluded": [
+        "player identities of any unit",
+        "whether a unit was performed by the anchor actor"
+      ],
+      "backbone": {
+        "layers": 2,
+        "hidden": 64,
+        "heads": 4,
+        "ffn": 128,
+        "dropout": 0.1,
+        "time_bias_mlp_hidden": 16,
+        "readout": "anchor_mean"
+      }
+    },
+    "conditions": {
+      "M0_static": {
+        "static": true,
+        "summary": false,
+        "history": "none",
+        "context_identity": false
+      },
+      "M1_summary": {
+        "static": true,
+        "summary": true,
+        "history": "none",
+        "context_identity": false
+      },
+      "M2_pooled": {
+        "static": true,
+        "summary": true,
+        "history": "pooled",
+        "context_identity": false
+      },
+      "M2_shuffled": {
+        "static": true,
+        "summary": true,
+        "history": "pooled_shuffled_within_team",
+        "context_identity": false
+      },
+      "M3_attention": {
+        "static": true,
+        "summary": true,
+        "history": "candidate_attention",
+        "context_identity": false
+      },
+      "M0_ctx_identity": {
+        "static": true,
+        "summary": false,
+        "history": "none",
+        "context_identity": true
+      }
+    },
+    "candidate_features": {
+      "static": [
+        "global player id (train vocabulary)",
+        "role",
+        "foot",
+        "height",
+        "weight",
+        "metadata flag",
+        "starter",
+        "same team as the reference team"
+      ],
+      "summary": [
+        "log1p appearances in the window",
+        "units since last appearance / 80",
+        "log1p seconds since last appearance",
+        "never appeared in the window",
+        "is the anchor actor"
+      ],
+      "history_event": [
+        "Raw10 type",
+        "subtype code",
+        "location in anchor frame",
+        "location validity",
+        "merged-duel flag",
+        "units before the anchor / 80",
+        "log1p seconds before the anchor",
+        "unit team relation to the reference team"
+      ]
+    },
+    "shuffle_seed": 20261016,
+    "training": {
+      "seeds": [
+        20260715,
+        20260716,
+        20260717
+      ],
+      "precision": "float32",
+      "deterministic": true,
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "gradient_clip": 5,
+      "batch_size": 256,
+      "targets_per_match": 128,
+      "targets_per_epoch": 34048,
+      "curve_only_validation_epochs": [
+        1,
+        2
+      ],
+      "validation_every": 4,
+      "max_epochs": 120,
+      "warmup_no_decay_epochs": 24,
+      "min_stop_epoch": 48,
+      "relative_improvement": 0.001,
+      "patience_validations": 3,
+      "lr_decay_factor": 0.3,
+      "max_lr_decays": 2,
+      "monitor": "player_nll_reachable",
+      "loader_workers": 4,
+      "prefetch_factor": 2
+    },
+    "lr_search": {
+      "epochs": 24,
+      "seed": 20260715,
+      "grid": [
+        0.0009,
+        0.0027,
+        0.0081
+      ],
+      "references": [
+        "M0_static",
+        "M3_attention"
+      ],
+      "rule": "lowest mean over the references of the minimum validation player NLL (reachable single and duel targets) within 24 epochs; ties take the smaller rate"
+    },
+    "decision": {
+      "positive": "top-1 on single-actor targets +1.0 pp or player NLL -0.03, all 3 seeds in the same direction and the match-bootstrap 95% CI excluding zero",
+      "primary_view": "single-actor targets; unreachable targets count as misses for top-k"
+    },
+    "execution": {
+      "python": "/home/li/football/paper_1/Phase_1/.venv/bin/python",
+      "gpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "jobs_per_gpu": 2,
+      "wait_for": "/home/li/football/graph_prediction_research/five_task_hgt_v1/reports/queue_status.json"
+    },
+    "evaluation": {
+      "bootstrap": {
+        "replicates": 10000,
+        "seed": 20261014
+      }
+    },
+    "test_evaluated": false
+  },
+  "condition_id": "M0_ctx_identity",
+  "condition": {
+    "static": true,
+    "summary": false,
+    "history": "none",
+    "context_identity": true
+  },
+  "seed": 20260717,
+  "lr": 0.0027,
+  "mode": "formal",
+  "device": "cuda:2",
+  "epochs": 120
+}

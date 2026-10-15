@@ -1,0 +1,479 @@
+{
+  "protocol": {
+    "version": "five_task_hgt_v1",
+    "root": "/home/li/football/graph_prediction_research/five_task_hgt_v1",
+    "parent_src": "/home/li/football/graph_prediction_research/src",
+    "paths": {
+      "raw_events": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/events/events_England.json",
+      "raw_matches": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/matches/matches_England.json",
+      "raw_players": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/entities/players.json",
+      "raw_teams": "/home/li/football/paper_1/Phase_1/data/whyscout/raw/entities/teams.json",
+      "manifests": {
+        "train": "/home/li/football/soccer_cohig_publish/configs/manifests/England_train.json",
+        "validation": "/home/li/football/soccer_cohig_publish/configs/manifests/England_validation.json",
+        "test": "/home/li/football/soccer_cohig_publish/configs/manifests/England_test.json"
+      },
+      "data": "/home/li/football/graph_prediction_research/five_task_hgt_v1/data",
+      "runs": "/home/li/football/graph_prediction_research/five_task_hgt_v1/runs",
+      "reports": "/home/li/football/graph_prediction_research/five_task_hgt_v1/reports"
+    },
+    "dataset": {
+      "expected": {
+        "train": {
+          "matches": 266,
+          "records": 449291,
+          "pairs": 58840,
+          "units": 390451,
+          "targets": 390185
+        },
+        "validation": {
+          "matches": 57,
+          "records": 96948,
+          "pairs": 13031,
+          "units": 83917,
+          "targets": 83860
+        }
+      },
+      "roster_slots": 40,
+      "window_units": 80,
+      "pair_rule": "adjacent records, both Duel, same period, different known teams, valid non-placeholder starts, max |xy_a + xy_b - 1| < 0.011 (parent rule)",
+      "pair_merge": "one unit; event Duel; unordered subtype-pair code; time of the earlier record; home-frame location = mean of the two home-frame starts; participants ordered home side first",
+      "reference_team": "single-actor unit: its team; merged duel: reference team of the latest preceding single-actor unit in the match; a merged duel with no preceding single-actor unit uses the home team",
+      "frame": "inputs and position target in the anchor reference team's attacking direction",
+      "soft_targets": "a merged-duel target gives Team and Player 0.5 to each side; Player is masked when either duel participant is unknown or outside the roster"
+    },
+    "information": {
+      "unit": [
+        "Raw10 type",
+        "subtype or unordered subtype pair",
+        "period",
+        "seconds in period",
+        "gap to previous unit (same period)",
+        "start location in anchor frame",
+        "location validity",
+        "merged-duel flag"
+      ],
+      "participants": [
+        "player identity",
+        "team identity"
+      ],
+      "pre_match": [
+        "squad roster (lineup and bench player ids only)",
+        "starter flag",
+        "player role, foot, height, weight",
+        "team id, side, type"
+      ],
+      "derived": [
+        "online possession phases from type, subtype, team and period (no tags)"
+      ],
+      "excluded": [
+        "end coordinates",
+        "all tags",
+        "outcomes",
+        "scores",
+        "cards",
+        "lineup statistics fields",
+        "substitution records",
+        "post-match statistics",
+        "old possession snapshots"
+      ]
+    },
+    "vocabulary_source": "training matches only; unseen ids map to 0",
+    "model": {
+      "hidden": 64,
+      "heads": 4,
+      "dropout": 0.1,
+      "layers": "shared HGT layer 1, main layer 2, private Player layer 2 (copied from main layer 2 at initialization)",
+      "readout": "projection(anchor state, mean of event states) for each branch",
+      "loss": "(0.2*event_ce/log(10) + time + position + 0.05*team + 0.4*player)/3",
+      "player_gradient_into_shared_layer_1": 0.25,
+      "sequence_counterpart": {
+        "ffn": 128,
+        "time_bias_mlp_hidden": 16,
+        "layers": "shared Pre-LN attention layer 1, main layer 2, private Player layer 2 (copied)",
+        "attention": "dense causal; bias MLP of delta_n, delta_t, delta_t_valid with relation slots zero"
+      }
+    },
+    "relations": {
+      "seq_next": [
+        [
+          "event",
+          "next",
+          "event"
+        ]
+      ],
+      "seq_gap": [
+        [
+          "event",
+          "gap_0_2s",
+          "event"
+        ],
+        [
+          "event",
+          "gap_2_5s",
+          "event"
+        ],
+        [
+          "event",
+          "gap_5_15s",
+          "event"
+        ],
+        [
+          "event",
+          "gap_15_60s",
+          "event"
+        ],
+        [
+          "event",
+          "gap_60plus",
+          "event"
+        ],
+        [
+          "event",
+          "period_break",
+          "event"
+        ]
+      ],
+      "player": [
+        [
+          "player",
+          "performs",
+          "event"
+        ],
+        [
+          "event",
+          "performed_by",
+          "player"
+        ]
+      ],
+      "team": [
+        [
+          "team",
+          "performs",
+          "event"
+        ],
+        [
+          "event",
+          "performed_by_team",
+          "team"
+        ]
+      ],
+      "member": [
+        [
+          "player",
+          "member_of",
+          "team"
+        ],
+        [
+          "team",
+          "has_member",
+          "player"
+        ]
+      ],
+      "type": [
+        [
+          "event",
+          "has_type",
+          "event_type"
+        ],
+        [
+          "event_type",
+          "describes",
+          "event"
+        ]
+      ],
+      "zone": [
+        [
+          "event",
+          "starts_in",
+          "zone"
+        ],
+        [
+          "zone",
+          "start_of",
+          "event"
+        ]
+      ],
+      "possession": [
+        [
+          "event",
+          "belongs_to",
+          "possession"
+        ],
+        [
+          "possession",
+          "contains",
+          "event"
+        ]
+      ]
+    },
+    "conditions": {
+      "hgt_full": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_seq": {
+        "family": "hgt",
+        "relations": [
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_untyped_seq": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_player": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_team": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_member": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_type": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_zone": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "type",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_no_possession": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "hgt_shuffled_player": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "shuffled_within_team"
+      },
+      "hgt_anchor_readout": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap",
+          "player",
+          "team",
+          "member",
+          "type",
+          "zone",
+          "possession"
+        ],
+        "readout": "anchor_only",
+        "player_edges": "true"
+      },
+      "hgt_events_only": {
+        "family": "hgt",
+        "relations": [
+          "seq_next",
+          "seq_gap"
+        ],
+        "readout": "anchor_mean",
+        "player_edges": "true"
+      },
+      "seq_mean": {
+        "family": "seq",
+        "readout": "anchor_mean"
+      },
+      "seq_anchor": {
+        "family": "seq",
+        "readout": "anchor_only"
+      }
+    },
+    "shuffle_seed": 20261015,
+    "training": {
+      "seeds": [
+        20260715,
+        20260716,
+        20260717
+      ],
+      "precision": "float32",
+      "tf32": false,
+      "deterministic": true,
+      "optimizer": "AdamW",
+      "weight_decay": 0.0001,
+      "gradient_clip": 5,
+      "batch_size": 256,
+      "targets_per_match": 128,
+      "targets_per_epoch": 34048,
+      "updates_per_epoch": 133,
+      "curve_only_validation_epochs": [
+        1,
+        2
+      ],
+      "validation_every": 4,
+      "max_epochs": 120,
+      "warmup_no_decay_epochs": 24,
+      "min_stop_epoch": 48,
+      "relative_improvement": 0.001,
+      "patience_validations": 3,
+      "lr_decay_factor": 0.3,
+      "max_lr_decays": 2,
+      "monitor": "five_task_loss",
+      "checkpoint": "minimum validation five_task_loss on the every-4-epoch schedule; ties keep the earlier epoch",
+      "loader_workers": 4,
+      "prefetch_factor": 2
+    },
+    "lr_search": {
+      "epochs": 24,
+      "seed": 20260715,
+      "grid": [
+        0.0003,
+        0.0009,
+        0.0027,
+        0.0081
+      ],
+      "references": {
+        "hgt": "hgt_full",
+        "seq": "seq_mean"
+      },
+      "rule": "lowest validation five_task_loss within 24 epochs; ties take the smaller rate; a selection at a grid end is reported"
+    },
+    "execution": {
+      "python": "/home/li/football/paper_1/Phase_1/.venv/bin/python",
+      "gpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "jobs_per_gpu": 2
+    },
+    "evaluation": {
+      "views": {
+        "all": "every target",
+        "non_duel_target": "targets that are not merged duels (Team and Player are single labels)",
+        "duel_target": "targets that are merged duels",
+        "duel_anchor": "anchors that are merged duels"
+      },
+      "bootstrap": {
+        "replicates": 10000,
+        "seed": 20261014,
+        "unit": "match"
+      }
+    },
+    "test_evaluated": false
+  },
+  "condition_id": "hgt_no_possession",
+  "condition": {
+    "family": "hgt",
+    "relations": [
+      "seq_next",
+      "seq_gap",
+      "player",
+      "team",
+      "member",
+      "type",
+      "zone"
+    ],
+    "readout": "anchor_mean",
+    "player_edges": "true"
+  },
+  "seed": 20260716,
+  "lr": 0.0027,
+  "mode": "formal",
+  "device": "cuda:0",
+  "epochs": 120
+}

@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "stop_reason": "budget_exhausted",
+  "epochs": 120,
+  "best_epoch": 116,
+  "best_monitor": 0.34149922120094583,
+  "optimizer_steps": 15960,
+  "cumulative_targets": 4085760
+}

@@ -1,0 +1,32 @@
+2026-10-15 02:51:02 formal-only stage signal_screening_v1_stage2_fixed_schedule: 5 conditions x 3 seeds, locked lr 0.0027
+2026-10-15 02:51:02 start formal formal_M1_summary_s20260715 gpu0
+2026-10-15 02:51:02 start formal formal_M2_pooled_s20260715 gpu0
+2026-10-15 02:51:02 start formal formal_M2_shuffled_s20260715 gpu1
+2026-10-15 02:51:02 start formal formal_M0_ctx_identity_s20260715 gpu1
+2026-10-15 02:51:02 start formal formal_M0_ctx_identity_dot_s20260715 gpu2
+2026-10-15 02:51:02 start formal formal_M1_summary_s20260716 gpu2
+2026-10-15 02:51:02 start formal formal_M2_pooled_s20260716 gpu3
+2026-10-15 02:51:02 start formal formal_M2_shuffled_s20260716 gpu3
+2026-10-15 04:11:43 finish formal_M1_summary_s20260715 exit 0
+2026-10-15 04:11:43 start formal formal_M0_ctx_identity_s20260716 gpu0
+2026-10-15 04:12:03 finish formal_M1_summary_s20260716 exit 0
+2026-10-15 04:12:03 start formal formal_M0_ctx_identity_dot_s20260716 gpu2
+2026-10-15 04:14:23 finish formal_M0_ctx_identity_s20260715 exit 0
+2026-10-15 04:14:23 start formal formal_M1_summary_s20260717 gpu1
+2026-10-15 04:15:03 finish formal_M0_ctx_identity_dot_s20260715 exit 0
+2026-10-15 04:15:03 start formal formal_M2_pooled_s20260717 gpu2
+2026-10-15 04:40:03 finish formal_M2_pooled_s20260715 exit 0
+2026-10-15 04:40:03 start formal formal_M2_shuffled_s20260717 gpu0
+2026-10-15 04:40:53 finish formal_M2_pooled_s20260716 exit 0
+2026-10-15 04:40:53 start formal formal_M0_ctx_identity_s20260717 gpu3
+2026-10-15 04:41:03 finish formal_M2_shuffled_s20260715 exit 0
+2026-10-15 04:41:03 start formal formal_M0_ctx_identity_dot_s20260717 gpu1
+2026-10-15 04:42:03 finish formal_M2_shuffled_s20260716 exit 0
+2026-10-15 05:22:24 finish formal_M1_summary_s20260717 exit 0
+2026-10-15 05:22:44 finish formal_M0_ctx_identity_s20260716 exit 0
+2026-10-15 05:23:04 finish formal_M0_ctx_identity_dot_s20260716 exit 0
+2026-10-15 05:34:34 finish formal_M2_pooled_s20260717 exit 0
+2026-10-15 05:35:04 finish formal_M0_ctx_identity_s20260717 exit 0
+2026-10-15 05:35:34 finish formal_M0_ctx_identity_dot_s20260717 exit 0
+2026-10-15 05:41:14 finish formal_M2_shuffled_s20260717 exit 0
+2026-10-15 05:41:17 queue complete

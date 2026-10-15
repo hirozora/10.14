@@ -1,0 +1,20 @@
+{
+  "status": "locked",
+  "selected": 0.0027,
+  "at_grid_edge": false,
+  "scores": {
+    "0.0009": [
+      2.568047629696348,
+      2.3455551186395254
+    ],
+    "0.0027": [
+      2.5512935314719374,
+      2.3268650153496075
+    ],
+    "0.0081": [
+      2.7841647156540765,
+      2.3476696753801494
+    ]
+  },
+  "rule": "lowest mean over the references of the minimum validation player NLL (reachable single and duel targets) within 24 epochs; ties take the smaller rate"
+}

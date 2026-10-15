@@ -1,0 +1,20 @@
+test_01_incoming_substitute_needs_finished_minute_or_observation (__main__.ScreeningTests.test_01_incoming_substitute_needs_finished_minute_or_observation) ... ok
+test_02_candidate_set_ignores_the_future (__main__.ScreeningTests.test_02_candidate_set_ignores_the_future) ... ok
+test_03_sent_off_player_leaves_after_the_foul (__main__.ScreeningTests.test_03_sent_off_player_leaves_after_the_foul) ... ok
+test_04_context_identity_only_where_declared (__main__.ScreeningTests.test_04_context_identity_only_where_declared) ... ok
+test_05_condition_firewall (__main__.ScreeningTests.test_05_condition_firewall) ... ok
+test_06_history_positions_match_a_reference (__main__.ScreeningTests.test_06_history_positions_match_a_reference) ... ok
+test_07_shuffled_control (__main__.ScreeningTests.test_07_shuffled_control) ... ok
+test_08_future_invariance_of_inputs (__main__.ScreeningTests.test_08_future_invariance_of_inputs) ... ok
+test_09_targets_and_candidates_match_a_slow_reference (__main__.ScreeningTests.test_09_targets_and_candidates_match_a_slow_reference)
+Candidate sets recomputed per sample from the raw match file and the unit table. ... ok
+test_10_models_train_reload_and_mask (__main__.ScreeningTests.test_10_models_train_reload_and_mask) ... ok
+test_11_scoring (__main__.ScreeningTests.test_11_scoring) ... ok
+test_12_context_identity_reaches_the_scores (__main__.ScreeningTests.test_12_context_identity_reaches_the_scores) ... ok
+test_13_existing_conditions_match_the_archived_code (__main__.ScreeningTests.test_13_existing_conditions_match_the_archived_code)
+The first formal wave ran with the archived code; the current code must reproduce it exactly. ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 70.083s
+
+OK

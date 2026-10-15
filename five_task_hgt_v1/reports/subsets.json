@@ -1,0 +1,1075 @@
+{
+  "recency_share": {
+    "anchor actor": 0.08963749105652277,
+    "1-4 units ago": 0.18613164798473647,
+    "5-16 units ago": 0.21624135463868352,
+    "17-79 units ago": 0.2597066539470546,
+    "not in window": 0.037324111614595756
+  },
+  "conditions": {
+    "hgt_full": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.713493824005127,
+        "1-4 units ago": 0.35804128646850586,
+        "5-16 units ago": 0.2838498651981354,
+        "17-79 units ago": 0.274545818567276,
+        "not in window": 0.2214057445526123
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9105489253997803,
+        "1-4 units ago": 1.9322723150253296,
+        "5-16 units ago": 2.221794366836548,
+        "17-79 units ago": 2.312211275100708,
+        "not in window": 2.9466121196746826
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5957190990447998,
+        "Foul": 0.9731993675231934,
+        "Free Kick": 0.7854416370391846,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.8451492786407471,
+        "Offside": 1.0,
+        "Others on the ball": 0.7481422424316406,
+        "Pass": 0.8628754019737244,
+        "Save attempt": 0.7361111640930176,
+        "Shot": 0.8527004718780518
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6612863540649414,
+        "Foul": 0.0976313129067421,
+        "Free Kick": 0.4607721269130707,
+        "Goalkeeper leaving line": 0.5231648683547974,
+        "Interruption": 0.3182406425476074,
+        "Offside": 0.004583390895277262,
+        "Others on the ball": 0.5065789222717285,
+        "Pass": 0.33750104904174805,
+        "Save attempt": 0.564284086227417,
+        "Shot": 0.33567896485328674
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5238995082006929,
+        "Foul": 0.9776661083193746,
+        "Free Kick": 0.621852788820624,
+        "Goalkeeper leaving line": 0.6161616161616162,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5718803418803419,
+        "Pass": 0.730035853976532,
+        "Save attempt": 0.5409413281753707,
+        "Shot": 0.43420337139749865
+      },
+      "position_m_by_target": {
+        "Duel": 13.113483428955078,
+        "Foul": 5.346785068511963,
+        "Free Kick": 7.863921642303467,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.951601028442383,
+        "Offside": 13.833931922912598,
+        "Others on the ball": 13.228080749511719,
+        "Pass": 14.156949043273926,
+        "Save attempt": null,
+        "Shot": 9.478315353393555
+      },
+      "time_mae_by_target": {
+        "Duel": 1.041235089302063,
+        "Foul": 1.1592793464660645,
+        "Free Kick": 7.662689208984375,
+        "Goalkeeper leaving line": 0.7376702427864075,
+        "Interruption": 3.6206846237182617,
+        "Offside": 1.1232012510299683,
+        "Others on the ball": 1.077020525932312,
+        "Pass": 1.2297860383987427,
+        "Save attempt": 0.8156850337982178,
+        "Shot": 0.8563456535339355
+      }
+    },
+    "hgt_no_seq": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7105671763420105,
+        "1-4 units ago": 0.34554851055145264,
+        "5-16 units ago": 0.26067054271698,
+        "17-79 units ago": 0.2626383304595947,
+        "not in window": 0.2122470736503601
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9208266735076904,
+        "1-4 units ago": 1.9509572982788086,
+        "5-16 units ago": 2.269308567047119,
+        "17-79 units ago": 2.3466885089874268,
+        "not in window": 2.9824745655059814
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.591390073299408,
+        "Foul": 0.9737577438354492,
+        "Free Kick": 0.7857967019081116,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.7777518630027771,
+        "Offside": 1.0,
+        "Others on the ball": 0.7292993664741516,
+        "Pass": 0.8623217940330505,
+        "Save attempt": 0.7353801131248474,
+        "Shot": 0.8464266657829285
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6650526523590088,
+        "Foul": 0.09303238242864609,
+        "Free Kick": 0.4597342908382416,
+        "Goalkeeper leaving line": 0.5223448872566223,
+        "Interruption": 0.42399001121520996,
+        "Offside": 0.009334474802017212,
+        "Others on the ball": 0.5221790671348572,
+        "Pass": 0.33869853615760803,
+        "Save attempt": 0.5648426413536072,
+        "Shot": 0.3489830493927002
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5226397267243259,
+        "Foul": 0.9768285873813513,
+        "Free Kick": 0.6235995663173112,
+        "Goalkeeper leaving line": 0.6212121212121212,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5617094017094018,
+        "Pass": 0.728351803563668,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.4184339314845024
+      },
+      "position_m_by_target": {
+        "Duel": 13.236481666564941,
+        "Foul": 5.216879367828369,
+        "Free Kick": 8.046138763427734,
+        "Goalkeeper leaving line": null,
+        "Interruption": 17.218523025512695,
+        "Offside": 13.688935279846191,
+        "Others on the ball": 13.37527084350586,
+        "Pass": 14.444718360900879,
+        "Save attempt": null,
+        "Shot": 9.404534339904785
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0352888107299805,
+        "Foul": 1.1733201742172241,
+        "Free Kick": 7.662759304046631,
+        "Goalkeeper leaving line": 0.7401514649391174,
+        "Interruption": 3.7159013748168945,
+        "Offside": 1.0558838844299316,
+        "Others on the ball": 1.1030184030532837,
+        "Pass": 1.2150105237960815,
+        "Save attempt": 0.8145149350166321,
+        "Shot": 0.9209069609642029
+      }
+    },
+    "hgt_untyped_seq": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.715090274810791,
+        "1-4 units ago": 0.3513571321964264,
+        "5-16 units ago": 0.28157052397727966,
+        "17-79 units ago": 0.27154597640037537,
+        "not in window": 0.22215121984481812
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9123753905296326,
+        "1-4 units ago": 1.9374333620071411,
+        "5-16 units ago": 2.219588041305542,
+        "17-79 units ago": 2.314714193344116,
+        "not in window": 2.9369869232177734
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5966811180114746,
+        "Foul": 0.9745952486991882,
+        "Free Kick": 0.7873058319091797,
+        "Goalkeeper leaving line": 0.7800925374031067,
+        "Interruption": 0.8448383212089539,
+        "Offside": 0.9973649978637695,
+        "Others on the ball": 0.7545647621154785,
+        "Pass": 0.863381564617157,
+        "Save attempt": 0.7302631735801697,
+        "Shot": 0.851336658000946
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6612488627433777,
+        "Foul": 0.09756029397249222,
+        "Free Kick": 0.4567614495754242,
+        "Goalkeeper leaving line": 0.5363435745239258,
+        "Interruption": 0.3150608241558075,
+        "Offside": 0.007903986610472202,
+        "Others on the ball": 0.501214325428009,
+        "Pass": 0.33616283535957336,
+        "Save attempt": 0.5638812184333801,
+        "Shot": 0.3325639069080353
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5244809458051699,
+        "Foul": 0.9765494137353433,
+        "Free Kick": 0.6255872786411275,
+        "Goalkeeper leaving line": 0.6279461279461279,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5691880341880341,
+        "Pass": 0.7305383528900479,
+        "Save attempt": 0.5402965828497743,
+        "Shot": 0.43637846655791185
+      },
+      "position_m_by_target": {
+        "Duel": 13.201416969299316,
+        "Foul": 5.206644058227539,
+        "Free Kick": 7.932002544403076,
+        "Goalkeeper leaving line": null,
+        "Interruption": 17.063806533813477,
+        "Offside": 13.79061222076416,
+        "Others on the ball": 13.238442420959473,
+        "Pass": 14.152928352355957,
+        "Save attempt": null,
+        "Shot": 9.403678894042969
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0299725532531738,
+        "Foul": 1.188781499862671,
+        "Free Kick": 7.534322261810303,
+        "Goalkeeper leaving line": 0.7547599673271179,
+        "Interruption": 3.651141881942749,
+        "Offside": 1.0714610815048218,
+        "Others on the ball": 1.0765639543533325,
+        "Pass": 1.2232030630111694,
+        "Save attempt": 0.8603613972663879,
+        "Shot": 0.8883605003356934
+      }
+    },
+    "hgt_no_player": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.28180572390556335,
+        "1-4 units ago": 0.2457556575536728,
+        "5-16 units ago": 0.23741774260997772,
+        "17-79 units ago": 0.23908352851867676,
+        "not in window": 0.2669861614704132
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 2.374224901199341,
+        "1-4 units ago": 2.3497142791748047,
+        "5-16 units ago": 2.4597203731536865,
+        "17-79 units ago": 2.5020768642425537,
+        "not in window": 2.521188497543335
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5880231261253357,
+        "Foul": 0.9748743176460266,
+        "Free Kick": 0.7843763828277588,
+        "Goalkeeper leaving line": 0.7824074625968933,
+        "Interruption": 0.8450714945793152,
+        "Offside": 1.0,
+        "Others on the ball": 0.7305732369422913,
+        "Pass": 0.8624008297920227,
+        "Save attempt": 0.7426900863647461,
+        "Shot": 0.8393344283103943
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6673455238342285,
+        "Foul": 0.0950448215007782,
+        "Free Kick": 0.4597620964050293,
+        "Goalkeeper leaving line": 0.5311734676361084,
+        "Interruption": 0.3200334310531616,
+        "Offside": 0.004199506714940071,
+        "Others on the ball": 0.523587167263031,
+        "Pass": 0.33672034740448,
+        "Save attempt": 0.5551385283470154,
+        "Shot": 0.36080893874168396
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5235361096978947,
+        "Foul": 0.9785036292573981,
+        "Free Kick": 0.6201060113239368,
+        "Goalkeeper leaving line": 0.622895622895623,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5697008547008547,
+        "Pass": 0.7303142655367232,
+        "Save attempt": 0.5409413281753707,
+        "Shot": 0.4390973355084285
+      },
+      "position_m_by_target": {
+        "Duel": 13.10135269165039,
+        "Foul": 5.219881534576416,
+        "Free Kick": 8.040294647216797,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.915468215942383,
+        "Offside": 13.626261711120605,
+        "Others on the ball": 13.18636417388916,
+        "Pass": 14.251175880432129,
+        "Save attempt": null,
+        "Shot": 9.372664451599121
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0431169271469116,
+        "Foul": 1.1712779998779297,
+        "Free Kick": 7.686995029449463,
+        "Goalkeeper leaving line": 0.7560162544250488,
+        "Interruption": 3.642737627029419,
+        "Offside": 1.0601732730865479,
+        "Others on the ball": 1.0925025939941406,
+        "Pass": 1.2392874956130981,
+        "Save attempt": 0.8277156949043274,
+        "Shot": 0.8896887898445129
+      }
+    },
+    "hgt_no_team": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7124739289283752,
+        "1-4 units ago": 0.3544749915599823,
+        "5-16 units ago": 0.281166136264801,
+        "17-79 units ago": 0.27131640911102295,
+        "not in window": 0.20181043446063995
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9014272093772888,
+        "1-4 units ago": 1.9414647817611694,
+        "5-16 units ago": 2.225905418395996,
+        "17-79 units ago": 2.3209543228149414,
+        "not in window": 3.008798360824585
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5819504857063293,
+        "Foul": 0.9754326939582825,
+        "Free Kick": 0.7842876315116882,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.8114116787910461,
+        "Offside": 1.0,
+        "Others on the ball": 0.6912950873374939,
+        "Pass": 0.8624088168144226,
+        "Save attempt": 0.7404970526695251,
+        "Shot": 0.847517728805542
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6682267785072327,
+        "Foul": 0.0943717360496521,
+        "Free Kick": 0.46040046215057373,
+        "Goalkeeper leaving line": 0.5211684107780457,
+        "Interruption": 0.3733347952365875,
+        "Offside": 0.005564637016505003,
+        "Others on the ball": 0.5539968609809875,
+        "Pass": 0.3375056982040405,
+        "Save attempt": 0.5636831521987915,
+        "Shot": 0.4031635522842407
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.52448094580517,
+        "Foul": 0.9776661083193746,
+        "Free Kick": 0.6165522226237803,
+        "Goalkeeper leaving line": 0.6296296296296297,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5704700854700855,
+        "Pass": 0.7304161234245979,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.43692224034801525
+      },
+      "position_m_by_target": {
+        "Duel": 13.053013801574707,
+        "Foul": 5.312739372253418,
+        "Free Kick": 7.974757671356201,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.86962127685547,
+        "Offside": 13.576834678649902,
+        "Others on the ball": 13.176901817321777,
+        "Pass": 14.177745819091797,
+        "Save attempt": null,
+        "Shot": 9.36023998260498
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0411268472671509,
+        "Foul": 1.1861258745193481,
+        "Free Kick": 7.754995822906494,
+        "Goalkeeper leaving line": 0.7539834380149841,
+        "Interruption": 3.622486114501953,
+        "Offside": 1.1365123987197876,
+        "Others on the ball": 1.0908626317977905,
+        "Pass": 1.2303171157836914,
+        "Save attempt": 0.8290590643882751,
+        "Shot": 0.8803721070289612
+      }
+    },
+    "hgt_no_member": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7090594172477722,
+        "1-4 units ago": 0.35964295268058777,
+        "5-16 units ago": 0.2821587324142456,
+        "17-79 units ago": 0.26970934867858887,
+        "not in window": 0.12023428827524185
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.92803555727005,
+        "1-4 units ago": 1.9423322677612305,
+        "5-16 units ago": 2.2369654178619385,
+        "17-79 units ago": 2.3330419063568115,
+        "not in window": 3.410632848739624
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.600649356842041,
+        "Foul": 0.9776660799980164,
+        "Free Kick": 0.785707950592041,
+        "Goalkeeper leaving line": 0.7777777314186096,
+        "Interruption": 0.8436722755432129,
+        "Offside": 1.0,
+        "Others on the ball": 0.7528131604194641,
+        "Pass": 0.8634210228919983,
+        "Save attempt": 0.7361111044883728,
+        "Shot": 0.8491544723510742
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6612176895141602,
+        "Foul": 0.08604657649993896,
+        "Free Kick": 0.4593595564365387,
+        "Goalkeeper leaving line": 0.5309962630271912,
+        "Interruption": 0.3164743185043335,
+        "Offside": 0.00596994673833251,
+        "Others on the ball": 0.5016271471977234,
+        "Pass": 0.33681201934814453,
+        "Save attempt": 0.5650206208229065,
+        "Shot": 0.3376796245574951
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5237299222327204,
+        "Foul": 0.9782244556113903,
+        "Free Kick": 0.621852788820624,
+        "Goalkeeper leaving line": 0.6094276094276094,
+        "Interruption": 0.9658199331935058,
+        "Offside": 1.0,
+        "Others on the ball": 0.5742735042735043,
+        "Pass": 0.7301852455454151,
+        "Save attempt": 0.5402965828497743,
+        "Shot": 0.43501903208265363
+      },
+      "position_m_by_target": {
+        "Duel": 13.069058418273926,
+        "Foul": 5.159607410430908,
+        "Free Kick": 7.89216947555542,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.76508903503418,
+        "Offside": 13.692400932312012,
+        "Others on the ball": 13.171217918395996,
+        "Pass": 14.143195152282715,
+        "Save attempt": null,
+        "Shot": 9.342350959777832
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0355758666992188,
+        "Foul": 1.184860110282898,
+        "Free Kick": 7.640644550323486,
+        "Goalkeeper leaving line": 0.7461836934089661,
+        "Interruption": 3.652043104171753,
+        "Offside": 1.1795049905776978,
+        "Others on the ball": 1.0869700908660889,
+        "Pass": 1.2251406908035278,
+        "Save attempt": 0.8387937545776367,
+        "Shot": 0.8654503226280212
+      }
+    },
+    "hgt_no_type": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7097246050834656,
+        "1-4 units ago": 0.3593226373195648,
+        "5-16 units ago": 0.2826366722583771,
+        "17-79 units ago": 0.2711327373981476,
+        "not in window": 0.21948881447315216
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9103541374206543,
+        "1-4 units ago": 1.9308109283447266,
+        "5-16 units ago": 2.2225043773651123,
+        "17-79 units ago": 2.3176987171173096,
+        "not in window": 2.9276416301727295
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5934343338012695,
+        "Foul": 0.9745951294898987,
+        "Free Kick": 0.7864181399345398,
+        "Goalkeeper leaving line": 0.7754629254341125,
+        "Interruption": 0.8459265828132629,
+        "Offside": 1.0,
+        "Others on the ball": 0.7238853573799133,
+        "Pass": 0.863531768321991,
+        "Save attempt": 0.7412281036376953,
+        "Shot": 0.850245475769043
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.663465678691864,
+        "Foul": 0.09534504264593124,
+        "Free Kick": 0.45945215225219727,
+        "Goalkeeper leaving line": 0.5329586863517761,
+        "Interruption": 0.31888875365257263,
+        "Offside": 0.005950137972831726,
+        "Others on the ball": 0.5248846411705017,
+        "Pass": 0.33700427412986755,
+        "Save attempt": 0.5610084533691406,
+        "Shot": 0.3623225688934326
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5246263052062892,
+        "Foul": 0.9779452819653823,
+        "Free Kick": 0.6201060113239368,
+        "Goalkeeper leaving line": 0.6313131313131313,
+        "Interruption": 0.9651984774333876,
+        "Offside": 1.0,
+        "Others on the ball": 0.5703418803418804,
+        "Pass": 0.7302871034332897,
+        "Save attempt": 0.5402965828497743,
+        "Shot": 0.4263186514410006
+      },
+      "position_m_by_target": {
+        "Duel": 13.110806465148926,
+        "Foul": 5.234786510467529,
+        "Free Kick": 7.862434387207031,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.953094482421875,
+        "Offside": 13.798500061035156,
+        "Others on the ball": 13.238868713378906,
+        "Pass": 14.12643814086914,
+        "Save attempt": null,
+        "Shot": 9.463468551635742
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0452247858047485,
+        "Foul": 1.1875672340393066,
+        "Free Kick": 7.638942241668701,
+        "Goalkeeper leaving line": 0.7450512051582336,
+        "Interruption": 3.621569871902466,
+        "Offside": 1.1029595136642456,
+        "Others on the ball": 1.078147292137146,
+        "Pass": 1.2346376180648804,
+        "Save attempt": 0.833386242389679,
+        "Shot": 0.8826518058776855
+      }
+    },
+    "hgt_no_zone": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7136268615722656,
+        "1-4 units ago": 0.35763558745384216,
+        "5-16 units ago": 0.2830043137073517,
+        "17-79 units ago": 0.27101030945777893,
+        "not in window": 0.21778488159179688
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9127521514892578,
+        "1-4 units ago": 1.936322808265686,
+        "5-16 units ago": 2.2145020961761475,
+        "17-79 units ago": 2.312394857406616,
+        "not in window": 2.952082395553589
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5968314409255981,
+        "Foul": 0.9748743176460266,
+        "Free Kick": 0.783311128616333,
+        "Goalkeeper leaving line": 0.7824074625968933,
+        "Interruption": 0.84149569272995,
+        "Offside": 1.0,
+        "Others on the ball": 0.7485137581825256,
+        "Pass": 0.8632628917694092,
+        "Save attempt": 0.7404970526695251,
+        "Shot": 0.8466994166374207
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6629682183265686,
+        "Foul": 0.09543249011039734,
+        "Free Kick": 0.4571669101715088,
+        "Goalkeeper leaving line": 0.5254753828048706,
+        "Interruption": 0.32047948241233826,
+        "Offside": 0.00943710282444954,
+        "Others on the ball": 0.5079978108406067,
+        "Pass": 0.3359343707561493,
+        "Save attempt": 0.5660427212715149,
+        "Shot": 0.34249523282051086
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5244809458051699,
+        "Foul": 0.9782244556113904,
+        "Free Kick": 0.6243826045054813,
+        "Goalkeeper leaving line": 0.6279461279461279,
+        "Interruption": 0.9658976151635206,
+        "Offside": 1.0,
+        "Others on the ball": 0.5732478632478633,
+        "Pass": 0.7300562255541069,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.41761827079934744
+      },
+      "position_m_by_target": {
+        "Duel": 13.175137519836426,
+        "Foul": 5.28110408782959,
+        "Free Kick": 8.07748794555664,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.96031951904297,
+        "Offside": 13.811110496520996,
+        "Others on the ball": 13.204124450683594,
+        "Pass": 14.211921691894531,
+        "Save attempt": null,
+        "Shot": 9.321300506591797
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0339444875717163,
+        "Foul": 1.1804066896438599,
+        "Free Kick": 7.6208014488220215,
+        "Goalkeeper leaving line": 0.7399253845214844,
+        "Interruption": 3.675250291824341,
+        "Offside": 1.166260838508606,
+        "Others on the ball": 1.0813792943954468,
+        "Pass": 1.2309346199035645,
+        "Save attempt": 0.8165175914764404,
+        "Shot": 0.8769668936729431
+      }
+    },
+    "hgt_no_possession": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.6985499858856201,
+        "1-4 units ago": 0.31539496779441833,
+        "5-16 units ago": 0.2730046808719635,
+        "17-79 units ago": 0.26724520325660706,
+        "not in window": 0.21544195711612701
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 1.0557615756988525,
+        "1-4 units ago": 2.055603265762329,
+        "5-16 units ago": 2.2679665088653564,
+        "17-79 units ago": 2.3597421646118164,
+        "not in window": 2.998555898666382
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5974025726318359,
+        "Foul": 0.9762702584266663,
+        "Free Kick": 0.7837550044059753,
+        "Goalkeeper leaving line": 0.7777777314186096,
+        "Interruption": 0.8389303684234619,
+        "Offside": 1.0,
+        "Others on the ball": 0.7161357998847961,
+        "Pass": 0.863136351108551,
+        "Save attempt": 0.7397660613059998,
+        "Shot": 0.8483360409736633
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6623697280883789,
+        "Foul": 0.09719683974981308,
+        "Free Kick": 0.45959678292274475,
+        "Goalkeeper leaving line": 0.5336415767669678,
+        "Interruption": 0.32501861453056335,
+        "Offside": 0.0038887429982423782,
+        "Others on the ball": 0.5347443222999573,
+        "Pass": 0.33766961097717285,
+        "Save attempt": 0.5697934627532959,
+        "Shot": 0.3676053583621979
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5235845628316013,
+        "Foul": 0.9765494137353433,
+        "Free Kick": 0.6228767618359234,
+        "Goalkeeper leaving line": 0.6161616161616162,
+        "Interruption": 0.9658976151635206,
+        "Offside": 1.0,
+        "Others on the ball": 0.5679487179487179,
+        "Pass": 0.729804976097349,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.4195214790647091
+      },
+      "position_m_by_target": {
+        "Duel": 13.16871166229248,
+        "Foul": 5.6426849365234375,
+        "Free Kick": 8.24328327178955,
+        "Goalkeeper leaving line": null,
+        "Interruption": 17.20899772644043,
+        "Offside": 13.792462348937988,
+        "Others on the ball": 13.3725004196167,
+        "Pass": 14.340755462646484,
+        "Save attempt": null,
+        "Shot": 9.520350456237793
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0336593389511108,
+        "Foul": 1.1967134475708008,
+        "Free Kick": 7.7215118408203125,
+        "Goalkeeper leaving line": 0.7354426980018616,
+        "Interruption": 3.703662633895874,
+        "Offside": 1.1851431131362915,
+        "Others on the ball": 1.0879727602005005,
+        "Pass": 1.2247867584228516,
+        "Save attempt": 0.8210704922676086,
+        "Shot": 0.8824515342712402
+      }
+    },
+    "hgt_shuffled_player": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.28646180033683777,
+        "1-4 units ago": 0.24082259833812714,
+        "5-16 units ago": 0.23361273109912872,
+        "17-79 units ago": 0.23963451385498047,
+        "not in window": 0.2615548372268677
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 2.3853209018707275,
+        "1-4 units ago": 2.36358642578125,
+        "5-16 units ago": 2.4679112434387207,
+        "17-79 units ago": 2.513603448867798,
+        "not in window": 2.5434410572052
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5892255902290344,
+        "Foul": 0.9759910702705383,
+        "Free Kick": 0.7857967019081116,
+        "Goalkeeper leaving line": 0.7777777314186096,
+        "Interruption": 0.8477923274040222,
+        "Offside": 1.0,
+        "Others on the ball": 0.7206475734710693,
+        "Pass": 0.8621873259544373,
+        "Save attempt": 0.7412280440330505,
+        "Shot": 0.8494271636009216
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6660788059234619,
+        "Foul": 0.09638002514839172,
+        "Free Kick": 0.4598666727542877,
+        "Goalkeeper leaving line": 0.5195698738098145,
+        "Interruption": 0.3279179632663727,
+        "Offside": 0.006116032600402832,
+        "Others on the ball": 0.5285096168518066,
+        "Pass": 0.33757781982421875,
+        "Save attempt": 0.5605886578559875,
+        "Shot": 0.3642345666885376
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5244567192383167,
+        "Foul": 0.9776661083193746,
+        "Free Kick": 0.622033489940971,
+        "Goalkeeper leaving line": 0.6363636363636364,
+        "Interruption": 0.9658976151635206,
+        "Offside": 1.0,
+        "Others on the ball": 0.5697008547008547,
+        "Pass": 0.7298660908300739,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.43148450244698205
+      },
+      "position_m_by_target": {
+        "Duel": 13.179832458496094,
+        "Foul": 5.206146717071533,
+        "Free Kick": 8.055288314819336,
+        "Goalkeeper leaving line": null,
+        "Interruption": 17.008819580078125,
+        "Offside": 13.722899436950684,
+        "Others on the ball": 13.244747161865234,
+        "Pass": 14.283556938171387,
+        "Save attempt": null,
+        "Shot": 9.369159698486328
+      },
+      "time_mae_by_target": {
+        "Duel": 1.041577935218811,
+        "Foul": 1.1778734922409058,
+        "Free Kick": 7.688377380371094,
+        "Goalkeeper leaving line": 0.7478330135345459,
+        "Interruption": 3.679781198501587,
+        "Offside": 1.1507840156555176,
+        "Others on the ball": 1.0780836343765259,
+        "Pass": 1.2370902299880981,
+        "Save attempt": 0.7671375274658203,
+        "Shot": 0.8672416806221008
+      }
+    },
+    "hgt_anchor_readout": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.7122521996498108,
+        "1-4 units ago": 0.36030492186546326,
+        "5-16 units ago": 0.28188303112983704,
+        "17-79 units ago": 0.2703215777873993,
+        "not in window": 0.21906284987926483
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 0.9122658371925354,
+        "1-4 units ago": 1.9277671575546265,
+        "5-16 units ago": 2.2251460552215576,
+        "17-79 units ago": 2.31999135017395,
+        "not in window": 2.9652328491210938
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5870611071586609,
+        "Foul": 0.9754326939582825,
+        "Free Kick": 0.785707950592041,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.844916045665741,
+        "Offside": 1.0,
+        "Others on the ball": 0.7072717547416687,
+        "Pass": 0.8629148602485657,
+        "Save attempt": 0.7397660613059998,
+        "Shot": 0.847517728805542
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6653153300285339,
+        "Foul": 0.09412296861410141,
+        "Free Kick": 0.4587881565093994,
+        "Goalkeeper leaving line": 0.5235502123832703,
+        "Interruption": 0.3249455988407135,
+        "Offside": 0.007883508689701557,
+        "Others on the ball": 0.5362197756767273,
+        "Pass": 0.336566686630249,
+        "Save attempt": 0.5703794956207275,
+        "Shot": 0.3819290101528168
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5244809458051699,
+        "Foul": 0.9768285873813513,
+        "Free Kick": 0.6213106854595831,
+        "Goalkeeper leaving line": 0.6161616161616162,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5694871794871795,
+        "Pass": 0.7297370708387657,
+        "Save attempt": 0.5402965828497743,
+        "Shot": 0.435562805872757
+      },
+      "position_m_by_target": {
+        "Duel": 13.13720417022705,
+        "Foul": 5.544908046722412,
+        "Free Kick": 8.034444808959961,
+        "Goalkeeper leaving line": null,
+        "Interruption": 16.839797973632812,
+        "Offside": 13.838050842285156,
+        "Others on the ball": 13.266361236572266,
+        "Pass": 14.198197364807129,
+        "Save attempt": null,
+        "Shot": 9.547743797302246
+      },
+      "time_mae_by_target": {
+        "Duel": 1.0379953384399414,
+        "Foul": 1.1668564081192017,
+        "Free Kick": 7.819849491119385,
+        "Goalkeeper leaving line": 0.7612665295600891,
+        "Interruption": 3.651219129562378,
+        "Offside": 1.1120586395263672,
+        "Others on the ball": 1.0805044174194336,
+        "Pass": 1.2293163537979126,
+        "Save attempt": 0.8033313155174255,
+        "Shot": 0.8764541149139404
+      }
+    },
+    "hgt_events_only": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.1948915719985962,
+        "1-4 units ago": 0.17062805593013763,
+        "5-16 units ago": 0.169111430644989,
+        "17-79 units ago": 0.16552641987800598,
+        "not in window": 0.17316293716430664
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 2.7688148021698,
+        "1-4 units ago": 2.72839093208313,
+        "5-16 units ago": 2.7803351879119873,
+        "17-79 units ago": 2.8291842937469482,
+        "not in window": 2.87312388420105
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5768699049949646,
+        "Foul": 0.9771077632904053,
+        "Free Kick": 0.7831335663795471,
+        "Goalkeeper leaving line": 0.7685185074806213,
+        "Interruption": 0.7603389620780945,
+        "Offside": 1.0,
+        "Others on the ball": 0.6799893975257874,
+        "Pass": 0.8611987233161926,
+        "Save attempt": 0.7404970526695251,
+        "Shot": 0.8480632901191711
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6729615330696106,
+        "Foul": 0.09581854194402695,
+        "Free Kick": 0.46085426211357117,
+        "Goalkeeper leaving line": 0.5238134264945984,
+        "Interruption": 0.44415274262428284,
+        "Offside": 0.011742486618459225,
+        "Others on the ball": 0.5735933780670166,
+        "Pass": 0.34103450179100037,
+        "Save attempt": 0.5683440566062927,
+        "Shot": 0.4123751223087311
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5251108365433534,
+        "Foul": 0.9773869346733668,
+        "Free Kick": 0.6148054451270931,
+        "Goalkeeper leaving line": 0.6262626262626263,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5676068376068376,
+        "Pass": 0.7298321382007823,
+        "Save attempt": 0.5415860735009671,
+        "Shot": 0.4252311038607939
+      },
+      "position_m_by_target": {
+        "Duel": 13.360812187194824,
+        "Foul": 5.551026821136475,
+        "Free Kick": 7.95697546005249,
+        "Goalkeeper leaving line": null,
+        "Interruption": 17.407472610473633,
+        "Offside": 14.269022941589355,
+        "Others on the ball": 13.354248046875,
+        "Pass": 14.405741691589355,
+        "Save attempt": null,
+        "Shot": 9.40968132019043
+      },
+      "time_mae_by_target": {
+        "Duel": 1.051708698272705,
+        "Foul": 1.1662979125976562,
+        "Free Kick": 7.771518707275391,
+        "Goalkeeper leaving line": 0.7613906860351562,
+        "Interruption": 3.671992540359497,
+        "Offside": 1.1936131715774536,
+        "Others on the ball": 1.0850859880447388,
+        "Pass": 1.2525149583816528,
+        "Save attempt": 0.7994620203971863,
+        "Shot": 0.8888451457023621
+      }
+    },
+    "seq_mean": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.5411289930343628,
+        "1-4 units ago": 0.2637794315814972,
+        "5-16 units ago": 0.2249365895986557,
+        "17-79 units ago": 0.2226915806531906,
+        "not in window": 0.23290733993053436
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 1.6803607940673828,
+        "1-4 units ago": 2.4357593059539795,
+        "5-16 units ago": 2.594881296157837,
+        "17-79 units ago": 2.6558139324188232,
+        "not in window": 2.7707042694091797
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.5909090638160706,
+        "Foul": 0.9765493869781494,
+        "Free Kick": 0.7856191992759705,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.8415734171867371,
+        "Offside": 1.0,
+        "Others on the ball": 0.7340764403343201,
+        "Pass": 0.8627646565437317,
+        "Save attempt": 0.7412281036376953,
+        "Shot": 0.8431532979011536
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6667258739471436,
+        "Foul": 0.08992790430784225,
+        "Free Kick": 0.46084487438201904,
+        "Goalkeeper leaving line": 0.5061214566230774,
+        "Interruption": 0.3285195529460907,
+        "Offside": 0.00459665060043335,
+        "Others on the ball": 0.5132789015769958,
+        "Pass": 0.3372931480407715,
+        "Save attempt": 0.5710324645042419,
+        "Shot": 0.3447040319442749
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5206773748092157,
+        "Foul": 0.9765494137353433,
+        "Free Kick": 0.6167329237441271,
+        "Goalkeeper leaving line": 0.5942760942760943,
+        "Interruption": 0.9652761594034024,
+        "Offside": 1.0,
+        "Others on the ball": 0.5643589743589744,
+        "Pass": 0.7291530856149501,
+        "Save attempt": 0.5402965828497743,
+        "Shot": 0.41544317563893424
+      },
+      "position_m_by_target": {
+        "Duel": 13.638359069824219,
+        "Foul": 6.858689785003662,
+        "Free Kick": 9.522780418395996,
+        "Goalkeeper leaving line": null,
+        "Interruption": 18.212024688720703,
+        "Offside": 14.358295440673828,
+        "Others on the ball": 13.823412895202637,
+        "Pass": 14.7691011428833,
+        "Save attempt": null,
+        "Shot": 9.689096450805664
+      },
+      "time_mae_by_target": {
+        "Duel": 1.052634358406067,
+        "Foul": 1.2418392896652222,
+        "Free Kick": 7.800442218780518,
+        "Goalkeeper leaving line": 0.76129549741745,
+        "Interruption": 3.722785234451294,
+        "Offside": 1.0751019716262817,
+        "Others on the ball": 1.0825666189193726,
+        "Pass": 1.2401889562606812,
+        "Save attempt": 0.81142657995224,
+        "Shot": 0.9192320704460144
+      }
+    },
+    "seq_anchor": {
+      "player_top1_by_recency": {
+        "anchor actor": 0.5545651912689209,
+        "1-4 units ago": 0.26160120964050293,
+        "5-16 units ago": 0.22363148629665375,
+        "17-79 units ago": 0.2185438722372055,
+        "not in window": 0.22545260190963745
+      },
+      "player_nll_by_recency": {
+        "anchor actor": 1.6612788438796997,
+        "1-4 units ago": 2.442944288253784,
+        "5-16 units ago": 2.5918076038360596,
+        "17-79 units ago": 2.665998935699463,
+        "not in window": 2.795356035232544
+      },
+      "team_accuracy_by_anchor": {
+        "Duel": 0.587902843952179,
+        "Foul": 0.9773869514465332,
+        "Free Kick": 0.7841100692749023,
+        "Goalkeeper leaving line": 0.7847221493721008,
+        "Interruption": 0.8429725766181946,
+        "Offside": 1.0,
+        "Others on the ball": 0.7371549606323242,
+        "Pass": 0.8629939556121826,
+        "Save attempt": 0.738304078578949,
+        "Shot": 0.8496999740600586
+      },
+      "team_nll_by_anchor": {
+        "Duel": 0.6687232851982117,
+        "Foul": 0.08919292688369751,
+        "Free Kick": 0.4565765857696533,
+        "Goalkeeper leaving line": 0.5231907963752747,
+        "Interruption": 0.3263808786869049,
+        "Offside": 0.005106984172016382,
+        "Others on the ball": 0.5119416117668152,
+        "Pass": 0.3372550904750824,
+        "Save attempt": 0.5717227458953857,
+        "Shot": 0.33339884877204895
+      },
+      "event_accuracy_by_anchor": {
+        "Duel": 0.5208469607771883,
+        "Foul": 0.9765494137353435,
+        "Free Kick": 0.622816528129141,
+        "Goalkeeper leaving line": 0.6161616161616162,
+        "Interruption": 0.9659752971335354,
+        "Offside": 1.0,
+        "Others on the ball": 0.5667521367521368,
+        "Pass": 0.7293703824424164,
+        "Save attempt": 0.5409413281753707,
+        "Shot": 0.4113648722131593
+      },
+      "position_m_by_target": {
+        "Duel": 13.645174980163574,
+        "Foul": 6.861514568328857,
+        "Free Kick": 9.196259498596191,
+        "Goalkeeper leaving line": null,
+        "Interruption": 18.415739059448242,
+        "Offside": 14.351646423339844,
+        "Others on the ball": 13.711199760437012,
+        "Pass": 14.64709758758545,
+        "Save attempt": null,
+        "Shot": 9.663925170898438
+      },
+      "time_mae_by_target": {
+        "Duel": 1.039534091949463,
+        "Foul": 1.206530213356018,
+        "Free Kick": 7.795131683349609,
+        "Goalkeeper leaving line": 0.7570626139640808,
+        "Interruption": 3.727496385574341,
+        "Offside": 1.1239949464797974,
+        "Others on the ball": 1.1159452199935913,
+        "Pass": 1.2284033298492432,
+        "Save attempt": 0.8263585567474365,
+        "Shot": 0.9518542289733887
+      }
+    }
+  }
+}
